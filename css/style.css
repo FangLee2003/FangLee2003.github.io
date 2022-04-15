@@ -27,7 +27,9 @@ body {
     margin-top: 65px;
     font-size: 13px;
 }
-
+footer{
+    margin-top: 2rem;
+}
 iframe body {
     margin: 30px;
 }
@@ -220,7 +222,7 @@ body.crypt-dark .crypt-bg-head {
     background: #1f2638;
     padding: 13px;
 }
-
+ 
 body.crypt-dark .crypt-boxed-area {
     background: #131a33;
     border: none;

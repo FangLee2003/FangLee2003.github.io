@@ -21,9 +21,9 @@
                                 <div class="crypt-logo"><img src="images/logo.jpg" alt=""></div>
                             </div>
                             <div class="col-xs-2">
-                                <div class="crypt-mega-dropdown-menu"> <a href=""
-                                        class="crypt-mega-dropdown-toggle">BTC/ETH <i
-                                            class="pe-7s-angle-down-circle"></i></a>
+                                <div class="crypt-mega-dropdown-menu"><a href=""
+                                        class="crypt-mega-dropdown-toggle">BTC/ETH
+                                        <i class="pe-7s-angle-down-circle"></i></a>
                                     <div class="crypt-mega-dropdown-menu-block">
                                         <div class="crypt-market-status">
                                             <div>
@@ -188,8 +188,9 @@
                             <li><a href="withdrawl.html">Account</a></li>
                             <li class="crypt-box-menu menu-red"><a href="register.html">register</a></li>
                             <li class="crypt-box-menu menu-green"><a href="login.html">login</a></li>
-                        </ul>
-                    </div><i class="menu-toggle pe-7s-menu d-xs-block d-sm-block d-md-none d-sm-none"></i>
+                             </ul>
+                    </div>
+                    <i class="menu-toggle pe-7s-menu d-xs-block d-sm-block d-md-none d-sm-none"></i>
                 </div>
             </div>
         </div>
@@ -208,35 +209,260 @@
             </div>
         </div>
     </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <div class="cryptorio-forms cryptorio-forms-dark text-center pt-5 pb-5">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="logo-image">
-                    </div>
-                    <h3 class="p-4">Welcome To Login</h3>
-                    <div class="cryptorio-main-form">
-                        <form action="" class="text-left">
-                            <label for="email">Account Name</label>
-                            <input type="text" id="email" name="email" placeholder="Your email/cellphone">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password"
-                                placeholder="Please Input Your Password">
-
-                            <input type="submit" value="Log In" class="crypt-button-red-full">
-                        </form>
-                        <p class="float-left"><a href="register.html">Sign Up</a></p>
-                        <p class="float-right"><a href="forgot.html">Forgot Password</a></p>
+    <div class="container-fluid">
+        <div class="row sm-gutters">
+            <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-5">
+                <div id="crypt-candle-chart"></div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-5">
+                <div class="crypt-boxed-area">
+                    <h6 class="crypt-bg-head"><b class="crypt-up">BUY</b> / <b class="crypt-down">SELL</b></h6>
+                    <div class="row no-gutters">
+                        <div class="col-md-5">
+                            <div class="crypt-buy-sell-form">
+                                <p>Buy <span class="crypt-up">BTC</span> <span class="fright">Available: <b
+                                            class="crypt-up">20 BTC</b></span></p>
+                                <div class="crypt-buy">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text">Price</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="0.02323476" readonly>
+                                        <div class="input-group-append"><span class="input-group-text">BTC</span></div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text">Amount</span>
+                                        </div>
+                                        <input type="number" class="form-control">
+                                        <div class="input-group-append"><span class="input-group-text">BTC</span></div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text">Total</span>
+                                        </div>
+                                        <input type="text" class="form-control" readonly>
+                                        <div class="input-group-append"><span class="input-group-text">BTC</span></div>
+                                    </div>
+                                    <div>
+                                        <p>Fee: <span class="fright">100%x0.2=0.02</span></p>
+                                    </div>
+                                    <div class="text-center mt-3 mb-3 crypt-up">
+                                        <p>You will approximately pay</p>
+                                        <h4>0.09834 BTC</h4>
+                                    </div>
+                                    <div class="menu-green"><a href="" class="crypt-button-green-full">Buy</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="crypt-buy-sell-form">
+                                <p>Sell <span class="crypt-down">BTC</span> <span class="fright">Available: <b
+                                            class="crypt-down">20 BTC</b></span></p>
+                                <div class="crypt-sell">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text">Price</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="0.02323476" readonly>
+                                        <div class="input-group-append"><span class="input-group-text">BTC</span></div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text">Amount</span>
+                                        </div>
+                                        <input type="number" class="form-control">
+                                        <div class="input-group-append"><span class="input-group-text">BTC</span></div>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"><span class="input-group-text">Total</span>
+                                        </div>
+                                        <input type="text" class="form-control" readonly>
+                                        <div class="input-group-append"><span class="input-group-text">BTC</span></div>
+                                    </div>
+                                    <div>
+                                        <p>Fee: <span class="fright">100%x0.2=0.02</span></p>
+                                    </div>
+                                    <div class="text-center mt-3 mb-3 crypt-down">
+                                        <p>You will approximately pay</p>
+                                        <h4>0.09834 BTC</h4>
+                                    </div>
+                                    <div><a href="" class="crypt-button-red-full">Sell</a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
+        </div>
+        <div class="row sm-gutters">
+            <div class="col-md-6">
+                <div id="depthchart" class="depthchart h-40 crypt-dark-segment"></div>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#active-orders" data-toggle="tab">Active
+                            Orders</a></li>
+                    <li role="presentation"><a href="#closed-orders" class="active" data-toggle="tab">Closed Orders</a>
+                    </li>
+                    <li role="presentation"><a href="#balance" data-toggle="tab">Balance</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane " id="active-orders">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Buy/sell</th>
+                                    <th scope="col">Price BTC</th>
+                                    <th scope="col">Amount BPS</th>
+                                    <th scope="col">Dealt BPS</th>
+                                    <th scope="col">Operation</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="no-orders text-center"><img src="images/empty.png" alt="no-orders">
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="closed-orders">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Buy/sell</th>
+                                    <th scope="col">Price BTC</th>
+                                    <th scope="col">Amount BPS</th>
+                                    <th scope="col">Dealt BPS</th>
+                                    <th scope="col">Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-up">Buy</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-down">Sell</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-up">Buy</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-down">Sell</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-up">Buy</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-down">Sell</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-up">Buy</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-down">Sell</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td class="crypt-down">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>22:35:59</th>
+                                    <td class="crypt-up">Buy</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.000056</td>
+                                    <td class="crypt-up">0.0003456</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="balance">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Currency</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Volume</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>BTC</th>
+                                    <td>0.0000564</td>
+                                    <td>6.6768876</td>
+                                </tr>
+                                <tr>
+                                    <th>ETC</th>
+                                    <td>0.000056</td>
+                                    <td>5.3424984</td>
+                                </tr>
+                                <tr>
+                                    <th>LTC</th>
+                                    <td>0.0000234</td>
+                                    <td>4.3456600</td>
+                                </tr>
+                                <tr>
+                                    <th>XMR</th>
+                                    <td>0.0000234</td>
+                                    <td>4.3456600</td>
+                                </tr>
+                                <tr>
+                                    <th>BIT</th>
+                                    <td>0.0000567</td>
+                                    <td>4.3456600</td>
+                                </tr>
+                                <tr>
+                                    <th>EGF</th>
+                                    <td>0.0000234</td>
+                                    <td>4.3456600</td>
+                                </tr>
+                                <tr>
+                                    <th>EER</th>
+                                    <td>0.0000567</td>
+                                    <td>4.3456600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <footer>
+
+    </footer>
     <script src="amc/core.js"></script>
     <script src="amc/charts.js"></script>
     <script src="amc/dark.js"></script>
