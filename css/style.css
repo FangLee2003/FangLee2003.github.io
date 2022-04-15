@@ -24,7 +24,7 @@ Table Of contents
 body {
     background: #f9faff;
     overflow-x: hidden;
-    margin-top: 65px;
+    margin: 5rem 2rem;
     font-size: 13px;
 }
 footer{
@@ -1535,7 +1535,7 @@ body {
 
 .cryptorio-forms-dark .cryptorio-main-form {
     background: #131722 url('../images/bg.png') center no-repeat;
-    padding: 70px 60px 100px 60px;
+    padding: 3rem 2rem 4rem;
     box-shadow: 0 0 53px #00000063;
     border-radius: 5px;
 }
