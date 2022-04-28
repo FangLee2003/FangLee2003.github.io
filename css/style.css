@@ -27,9 +27,11 @@ body {
     margin: 5rem 2rem;
     font-size: 13px;
 }
-footer{
+
+footer {
     margin-top: 2rem;
 }
+
 iframe body {
     margin: 30px;
 }
@@ -222,7 +224,7 @@ body.crypt-dark .crypt-bg-head {
     background: #1f2638;
     padding: 13px;
 }
- 
+
 body.crypt-dark .crypt-boxed-area {
     background: #131a33;
     border: none;
@@ -241,7 +243,7 @@ body.crypt-dark .crypt-boxed-area {
     padding-left: 30px;
 }
 
-.crypt-button-green-full {
+.button-green {
     background: #49c279;
     color: #fff;
     padding: 9px;
@@ -253,13 +255,13 @@ body.crypt-dark .crypt-boxed-area {
     transition: all 0.4s ease;
 }
 
-.crypt-button-green-full:hover {
+.button-green:hover {
     background: #34a560;
     text-decoration: none;
     color: #fff;
 }
 
-.crypt-button-red-full {
+.button-red {
     background: #f7614e !important;
     border: none !important;
     color: #fff;
@@ -272,7 +274,7 @@ body.crypt-dark .crypt-boxed-area {
     transition: all 0.4s ease;
 }
 
-.crypt-button-red-full:hover {
+.button-red:hover {
     text-decoration: none;
     color: #fff;
     background: #ca3a28;
@@ -1527,44 +1529,30 @@ body {
 }
 
 /*------- Login / Register ------------*/
-.cryptorio-forms {
-}
-
-.cryptorio-forms-dark {
-}
-
-.cryptorio-forms-dark .cryptorio-main-form {
+.main-form {
     background: #131722 url('../images/bg.png') center no-repeat;
     padding: 3rem 2rem 4rem;
     box-shadow: 0 0 53px #00000063;
     border-radius: 5px;
 }
 
-.cryptorio-main-form label {
+.main-form label {
     margin-bottom: 15px;
     font-size: 16px;
+    color: #fff;
 }
 
-.cryptorio-main-form a {
+.main-form a {
     font-size: 15px;
     font-weight: 600;
 }
 
-.cryptorio-main-form input {
+.main-form input {
     display: block;
     width: 100%;
     height: 50px;
     padding: 10px;
     margin-bottom: 15px;
-    border: none;
-}
-
-.cryptorio-forms-dark .cryptorio-main-form label {
-    color: #fff;
-}
-
-.cryptorio-forms-dark .cryptorio-main-form input {
-
     background-color: #1B2134;
 
     border: 1px solid #2c3552;
