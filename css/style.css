@@ -1021,6 +1021,7 @@ body.crypt-dark .crypt-fulldiv-linechart:after {
 
 .crypt-fulldiv-linechart .crypt-individual-marketcap canvas {
     margin-left: -5px;
+    
 }
 
 .crypt-fulldiv-linechart .coin-meta-data {
@@ -1556,4 +1557,7 @@ body {
     background-color: #1B2134;
 
     border: 1px solid #2c3552;
+}
+.carousel-item{
+    height: 30rem;
 }
