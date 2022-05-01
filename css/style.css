@@ -44,6 +44,8 @@ iframe body {
 
 .crypt-deepblue-segment {
     background: #131a33;
+    border: 1px solid #2f3a56;
+    border-radius: 3px;
 }
 
 body.crypt-dark .input-group-text {
@@ -734,7 +736,6 @@ ul.nav-tabs li a.active {
 }
 
 .tab-content {
-    margin-top: 19px;
     border: thin solid #363c4e;
     border-radius: 3px;
 }
@@ -1139,9 +1140,8 @@ body.crypt-dark .crypt-dash-search button[type=submit] i {
 }
 
 .crypt-big-list {
-    margin-top: 10px;
+    margin-top: 13px;
     padding: 0;
-    margin-bottom: 0;
 }
 
 .crypt-big-list li {

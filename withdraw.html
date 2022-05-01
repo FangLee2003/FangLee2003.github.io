@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crypterio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/ui.css">
+</head>
+
+<body class="crypt-dark">
+<header>
+    <div class="container-full-width">
+        <div class="crypt-header">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="crypt-logo">
+                                <a href="index.html">
+                                    <img src="images/logo.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 d-none d-md-block d-lg-block">
+                    <ul class="crypt-heading-menu fright">
+                        <li><a href="index.html">Market cap</a></li>
+                        <li><a href="exchange.html">Exchange</a></li>
+                        <li><a href="withdraw.html">Account</a></li>
+                        <li class="crypt-box-menu menu-red"><a href="register.html">register</a></li>
+                        <li class="crypt-box-menu menu-green"><a href="login.html">login</a></li>
+                    </ul>
+                </div>
+                <i class="menu-toggle pe-7s-menu d-xs-block d-sm-block d-md-none d-sm-none"></i>
+            </div>
+        </div>
+    </div>
+    <div class="crypt-mobile-menu">
+        <ul class="crypt-heading-menu">
+            <li><a href="index.html">Market Cap</a></li>
+            <li><a href="exchange.html">Exchange</a></li>
+            <li><a href="withdraw.html">Account</a></li>
+            <li class="crypt-box-menu menu-red"><a href="register.html">register</a></li>
+            <li class="crypt-box-menu menu-green"><a href="login.html">login</a></li>
+        </ul>
+        <div class="crypt-gross-market-cap">
+            <h5>$34.795.90 <span class="crypt-up pl-2">+3.435 %</span></h5>
+            <h6>0.7925.90 BTC <span class="crypt-down pl-2">+7.435 %</span></h6>
+        </div>
+    </div>
+</header>
+<!-- Main Content -->
+
+<div class="container-full-width">
+    <div class="row sm-gutters">
+        <div class="col-md-2"></div>
+        <div class="col-md-5 col-lg-5 col-xl-5 pt-5 text-center">
+            <div class="crypt-dash-withdraw d-block" id="bitcoin">
+                <div class="crypt-withdraw-body bg-white">
+                    <div class="tab-content" id="v-pills-zilliqua-btc-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-zilliqua-btc-deposit"
+                             role="tabpanel" aria-labelledby="v-pills-zilliqua-btc-deposit-tab">
+                            <h4 class="crypt-up">Wire bank transfer</h4>
+                            <p><i class="pe-7s-info"></i> Standard bank transfer will be made up to 2
+                                workdays</p>
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="text" placeholder="Bank Account Number"
+                                           class="form-control" name="bank-account">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" placeholder="Amount" class="form-control"
+                                           name="amount">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Swift Code"
+                                           name="swift">
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Country</option>
+                                            <option>Viet Nam</option>
+                                            <option>United States</option>
+                                            <option>Japan</option>
+                                            <option>Singapore</option>
+                                            <option>United States</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="recipient-btc">
+                                        <label class="form-check-label" for="recipient-btc">
+                                            Add to recipient
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row sm-gutters">
+                                    <div class="col-md-4-5">
+                                        <a href="" class="button-green">Deposit</a>
+                                    </div>
+                                    <div class="col-md-4-5">
+                                        <a href="" class="button-red">Withdraw</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-zilliqua-btc-history" role="tabpanel"
+                             aria-labelledby="v-pills-zilliqua-btc-history-tab">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Currency</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">22:35:59</th>
+                                    <td class="crypt-down">0.000056</td>
+                                    <td>BTC</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">22:35:59</th>
+                                    <td>0.0000564</td>
+                                    <td>ETH</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">22:35:59</th>
+                                    <td>0.0000234</td>
+                                    <td>XHO</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-xl-3 pt-5">
+            <div class="crypt-deepblue-segment pt-2 pr-2 pl-2">
+                <h4 class="crypt-up text-center mt-4">Wallet</h4>
+                <!-- <form class="crypt-dash-search">
+                    <input type="search" placeholder="Search..." name="s" class="crypt-big-search">
+                    <button type="submit">
+                        <i class="pe-7s-search"></i>
+                    </button>
+                </form>
+                -->
+                <ul class="crypt-big-list crypt-coin-select scroll-tab">
+                    <li>
+                        <a href="#bitcoin">
+                            <img src="images/coins/btc.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">55 Bitcoin <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ethrium">
+                            <img src="images/coins/eth.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">40 Ethrium <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#litecoin">
+                            <img src="images/coins/ltc.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">41 Litecoin <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#xrp">
+                            <img src="images/coins/xrp.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">12 XRP <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#monero">
+                            <img src="images/coins/monero.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">19 Monero <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#zilliqua">
+                            <img src="images/coins/zil.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">24 Zilliqua <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dash">
+                            <img src="images/coins/dash.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">33 Dash <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+<footer>
+
+</footer>
+<script src="js/jquery.js"></script>
+<script src="amc/core.js"></script>
+<script src="amc/charts.js"></script>
+<script src="amc/animated.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
