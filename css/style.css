@@ -746,7 +746,6 @@ ul.nav-tabs li a.active {
     position: sticky;
     top: 0;
 }
-
 .crypt-table-danger {
     background: #ffedea !important;
 }
@@ -811,6 +810,7 @@ body.crypt-dark .tab-content table thead tr {
 }
 
 body.crypt-dark .tab-content table tbody {
+
 }
 
 body.crypt-dark .tab-content table tr:hover {
