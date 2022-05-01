@@ -57,8 +57,64 @@
 
 <div class="container-full-width">
     <div class="row sm-gutters">
-        <div class="col-md-2"></div>
-        <div class="col-md-5 col-lg-5 col-xl-5 pt-5 text-center">
+
+        <div class="col-md-4 col-lg-4 col-xl-4 pt-5">
+            <div class="crypt-deepblue-segment pt-2 pr-2 pl-2 ">
+                <h3 class="mt-3 ml-2">Wallet</h3>
+                <!-- <form class="crypt-dash-search">
+                    <input type="search" placeholder="Search..." name="s" class="crypt-big-search">
+                    <button type="submit">
+                        <i class="pe-7s-search"></i>
+                    </button>
+                </form>
+                -->
+                <ul class="crypt-big-list crypt-coin-select scroll-tab">
+                    <li>
+                        <a href="#bitcoin">
+                            <img src="images/coins/btc.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">55 Bitcoin <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ethrium">
+                            <img src="images/coins/eth.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">40 Ethrium <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#litecoin">
+                            <img src="images/coins/ltc.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">41 Litecoin <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#xrp">
+                            <img src="images/coins/xrp.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">12 XRP <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#monero">
+                            <img src="images/coins/monero.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">19 Monero <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#zilliqua">
+                            <img src="images/coins/zil.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">24 Zilliqua <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dash">
+                            <img src="images/coins/dash.png" width="25" class="crypt-market-cap-logo pr-2"
+                                 alt="coin">33 Dash <p class="fright">$456568</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 pt-5 text-center">
             <div class="crypt-dash-withdraw d-block" id="bitcoin">
                 <div class="crypt-withdraw-body bg-white">
                     <div class="tab-content" id="v-pills-zilliqua-btc-tabContent">
@@ -144,79 +200,26 @@
             </div>
         </div>
 
-        <div class="col-md-3 col-lg-3 col-xl-3 pt-5">
-            <div class="crypt-deepblue-segment pt-2 pr-2 pl-2">
-                <h4 class="crypt-up text-center mt-4">Wallet</h4>
-                <!-- <form class="crypt-dash-search">
-                    <input type="search" placeholder="Search..." name="s" class="crypt-big-search">
-                    <button type="submit">
-                        <i class="pe-7s-search"></i>
-                    </button>
-                </form>
-                -->
-                <ul class="crypt-big-list crypt-coin-select scroll-tab">
-                    <li>
-                        <a href="#bitcoin">
-                            <img src="images/coins/btc.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">55 Bitcoin <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ethrium">
-                            <img src="images/coins/eth.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">40 Ethrium <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#litecoin">
-                            <img src="images/coins/ltc.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">41 Litecoin <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#xrp">
-                            <img src="images/coins/xrp.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">12 XRP <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#monero">
-                            <img src="images/coins/monero.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">19 Monero <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#zilliqua">
-                            <img src="images/coins/zil.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">24 Zilliqua <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#dash">
-                            <img src="images/coins/dash.png" width="25" class="crypt-market-cap-logo pr-2"
-                                 alt="coin">33 Dash <p class="fright">$456568</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-md-4 mt-5">
+            <div id="depthchart" class="depthchart h-40 crypt-dark-segment"></div>
         </div>
-        <div class="col-md-2"></div>
     </div>
 </div>
 
 <footer>
 
 </footer>
-<script src="js/jquery.js"></script>
 <script src="amc/core.js"></script>
 <script src="amc/charts.js"></script>
+<script src="amc/dark.js"></script>
 <script src="amc/animated.js"></script>
-<script src="js/Chart.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.bundle.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
-<script src="js/chart.js"></script>
 <script src="js/main.js"></script>
+<script src="js/amc.js"></script>
+<script src="https://s3.tradingview.com/tv.js"></script>
 </body>
 
 </html>
