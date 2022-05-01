@@ -205,7 +205,6 @@ body.crypt-dark .crypt-bg-head {
 body.crypt-dark .crypt-boxed-area {
     background: #131a33;
     border: thin solid #363c4e;
-    border-radius: 2px;
     color: #fff;
 }
 
@@ -735,10 +734,14 @@ ul.nav-tabs li a.active {
 }
 
 .tab-content {
-    height: 25rem;
-    overflow: scroll;
+    margin-top: 19px;
     border: thin solid #363c4e;
-    border-radius: 2px;
+    border-radius: 3px;
+}
+
+.scroll-tab {
+    height: 21.4rem;
+    overflow: scroll;
 }
 
 .tab-content thead th {
@@ -746,6 +749,7 @@ ul.nav-tabs li a.active {
     position: sticky;
     top: 0;
 }
+
 .crypt-table-danger {
     background: #ffedea !important;
 }
@@ -853,7 +857,7 @@ body.crypt-dark .no-orders {
 
 #depthchart {
     width: 100%;
-    height: 25rem;
+    height: 21.4rem;
     margin-bottom: 2rem;
     border: 0.1px solid #343a40;
     border-radius: 2px;
@@ -872,30 +876,12 @@ body.crypt-dark .no-orders {
 --------- buy sell form ----------
 --------------------------------------*/
 .crypt-buy-sell-form > p {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 0;
 }
 
 .crypt-buy {
-    padding: 20px;
-    border-top: 1px solid #f1f1f1;
-    border-right: 1px solid #f1f1f1;
-}
-
-.crypt-sell {
-    padding: 20px;
-    border-top: 1px solid #f1f1f1;
-}
-
-body.crypt-dark .crypt-buy {
-    padding: 20px;
-    border-top: 1px solid #233161;
-    border-right: 1px solid #233161;
-}
-
-body.crypt-dark .crypt-sell {
-    padding: 20px;
-    border-top: 1px solid #233161;
+    padding: 10px 20px 20px 20px;
 }
 
 /*0--- market Capacity ----*/
@@ -1385,14 +1371,14 @@ body.crypt-dark .crypt-radio-boxed label {
 }
 
 select.crypt-image-select {
-    padding: 15px;
+    padding: 5px;
     width: 100%;
     border: 1px solid #f1f1f1;
     outline: none;
 }
 
 body.crypt-dark select.crypt-image-select {
-    padding: 15px;
+    padding: 10px;
     width: 100%;
     border: 1px solid #2f3a56;
     outline: none;
@@ -1431,7 +1417,7 @@ row.md-gutter [class*='col-'] {
 /*----- candlestick chart --------*/
 #crypt-candle-chart {
     width: 100%;
-    height: 520px !important;
+    height: 35rem !important;
 }
 
 .crypt-star {
