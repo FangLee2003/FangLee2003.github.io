@@ -204,7 +204,8 @@ body.crypt-dark .crypt-bg-head {
 
 body.crypt-dark .crypt-boxed-area {
     background: #131a33;
-    border: none;
+    border: thin solid #363c4e;
+    border-radius: 2px;
     color: #fff;
 }
 
@@ -718,7 +719,7 @@ ul.nav-tabs li {
 }
 
 ul.nav-tabs li a {
-    color: #000;
+    color: #1f2638;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
@@ -734,6 +735,16 @@ ul.nav-tabs li a.active {
 }
 
 .tab-content {
+    height: 25rem;
+    overflow: scroll;
+    border: thin solid #363c4e;
+    border-radius: 2px;
+}
+
+.tab-content thead th {
+    background: #1f2638;
+    position: sticky;
+    top: 0;
 }
 
 .crypt-table-danger {
@@ -796,12 +807,7 @@ body.crypt-dark .tab-content table thead {
 
 body.crypt-dark .tab-content table thead tr {
     cursor: none;
-    background: #131722 !important;
-}
-
-body.crypt-dark .tab-content table thead tr:hover {
-    background: #131722 !important;
-
+    background: #1f2638 !important;
 }
 
 body.crypt-dark .tab-content table tbody {
@@ -847,8 +853,10 @@ body.crypt-dark .no-orders {
 
 #depthchart {
     width: 100%;
-    height: 482px;
+    height: 25rem;
     margin-bottom: 2rem;
+    border: 0.1px solid #343a40;
+    border-radius: 2px;
 }
 
 .crypto-depth-chart-small-height {
