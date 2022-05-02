@@ -77,7 +77,8 @@ g[opacity="0.4"] {
 }
 
 .crypt-logo img {
-    height: 70px !important;
+    margin: 10px 30px;
+    height: 50px !important;
 }
 
 /*--- colors ----*/
@@ -961,6 +962,10 @@ img.crypt-market-cap-logo {
     margin-top: -3px;
 }
 
+img.wallet {
+    margin: 20px auto 0 auto;
+    width: 30px;
+}
 
 /*---------------------------------------
 ------------------- chart -----------------
@@ -1503,9 +1508,10 @@ body {
 
 /*------- Login / Register ------------*/
 .main-form {
-    background: #131722 url('../images/bg.png') center no-repeat;
-    padding: 3rem 2rem 4rem;
-    box-shadow: 0 0 53px #00000063;
+    margin-top: 1rem;
+    padding: 2rem 2rem 4rem;
+    background: #131a33;
+    border: thin solid #363c4e;
     border-radius: 5px;
 }
 
@@ -1525,8 +1531,7 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
-    margin-bottom: 15px;
-    background-color: #1B2134;
-
+    margin-bottom: 20px;
+    background-color: #11152b;
     border: 1px solid #2c3552;
 }
