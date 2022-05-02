@@ -744,6 +744,12 @@ ul.nav-tabs li a.active {
 .scroll-tab {
     height: 21.4rem;
     overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.scroll-tab::-webkit-scrollbar {
+    display: none;
 }
 
 .tab-content thead th {
