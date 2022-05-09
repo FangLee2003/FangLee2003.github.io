@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
 	});
 	var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
 
- 	jQuery('ul.crypt-heading-menu > li > a').each(function() {
+ 	jQuery('ul.nav-bar-right > li > a').each(function() {
   		if (this.href === path) {
    			jQuery(this).parent('li').addClass('active');
   		}else{

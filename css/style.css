@@ -25,6 +25,7 @@ footer {
     border: 0.1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2px;
     background: rgba(19, 26, 51, 0.2);
+    padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .input-group-text {
@@ -47,10 +48,6 @@ g[opacity="0.4"] {
     display: none;
 }
 
-.crypt-logo img {
-    margin: 10px 30px;
-    height: 50px !important;
-}
 
 /*--- colors ----*/
 .crypt-yellow {
@@ -85,9 +82,6 @@ g[opacity="0.4"] {
     box-shadow: 0 2px 30px #f1f1f1;
 }
 
-.container-full-width {
-    width: 100%;
-}
 
 .sm-gutters > .col, .sm-gutters > [class*=col-] {
     padding-right: 7px;
@@ -215,7 +209,6 @@ g[opacity="0.4"] {
 
 .button-red {
     background: #f7614e !important;
-    border: none !important;
     color: #fff;
     padding: 9px;
     text-align: center;
@@ -334,51 +327,6 @@ g[opacity="0.4"] {
     transform: translateY(-50%) rotate(0deg);
 }
 
-.crypt-heading-menu {
-    list-style: none;
-    padding-left: 0;
-    margin: 16px 0;
-    float: right;
-}
-
-.crypt-heading-menu li {
-    margin: 0 -18px;
-    padding: 0 10px;
-}
-
-.crypt-heading-menu li {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    margin-right: 18px;
-}
-
-.crypt-heading-menu li:last-child {
-    margin-right: 7px !important;
-}
-
-.crypt-heading-menu li.active {
-}
-
-.crypt-heading-menu li a {
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    padding: 9px 0px;
-    display: inline-block;
-    font-size: 11px;
-}
-
-.crypt-heading-menu li a:hover {
-    color: #f7614e;
-    border-bottom: 1px solid #f7614e;
-}
-
-.crypt-heading-menu li.active a {
-    color: #f7614e;
-    border-bottom: 1px solid #f7614e;
-}
 
 .crypt-dark .crypt-header {
     box-shadow: none;
@@ -389,7 +337,6 @@ g[opacity="0.4"] {
     width: 100%;
     z-index: 9999;
     height: 70px;
-
 }
 
 .crypt-dark .crypt-mega-dropdown-menu {
@@ -481,19 +428,19 @@ g[opacity="0.4"] {
     transform: translateY(-50%) rotate(0deg);
 }
 
-.crypt-dark .crypt-heading-menu {
+.crypt-dark .nav-bar-right {
     list-style: none;
     padding-left: 0;
     margin: 16px 0;
     float: right;
 }
 
-.crypt-dark .crypt-heading-menu li {
+.crypt-dark .nav-bar-right li {
     margin: 0 -18px;
     padding: 0 10px;
 }
 
-.crypt-dark .crypt-heading-menu li {
+.crypt-dark .nav-bar-right li {
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
@@ -501,10 +448,10 @@ g[opacity="0.4"] {
     margin-right: 16px;
 }
 
-.crypt-dark .crypt-heading-menu li.active {
+.crypt-dark .nav-bar-right li.active {
 }
 
-.crypt-dark .crypt-heading-menu li a {
+.crypt-dark .nav-bar-right li a {
 
     text-decoration: none;
     transition: all 0.4s ease;
@@ -513,12 +460,12 @@ g[opacity="0.4"] {
     font-size: 11px;
 }
 
-.crypt-dark .crypt-heading-menu li a:hover {
+.crypt-dark .nav-bar-right li a:hover {
     color: #f7614e;
     border-bottom: 1px solid #f7614e;
 }
 
-.crypt-dark .crypt-heading-menu li.active a {
+.crypt-dark .nav-bar-right li.active a {
     color: #f7614e;
     border-bottom: 1px solid #f7614e;
 }
@@ -578,19 +525,19 @@ g[opacity="0.4"] {
     box-shadow: 0 20px 20px #000;
 }
 
-.crypt-mobile-menu .crypt-heading-menu {
+.crypt-mobile-menu .nav-bar-right {
     list-style: none;
     padding-left: 0;
     margin: 30px 0;
     float: none;
 }
 
-.crypt-mobile-menu .crypt-heading-menu li {
+.crypt-mobile-menu .nav-bar-right li {
     /* padding: 10px; */
     margin: 0 -18px;
 }
 
-.crypt-mobile-menu .crypt-heading-menu li {
+.crypt-mobile-menu .nav-bar-right li {
     display: block;
     text-transform: uppercase;
     font-size: 14px;
@@ -598,15 +545,15 @@ g[opacity="0.4"] {
     margin: 18px 10px;
 }
 
-.crypt-mobile-menu .crypt-heading-menu li a:hover {
+.crypt-mobile-menu .nav-bar-right li a:hover {
     border-bottom: none;
 }
 
-.crypt-mobile-menu .crypt-heading-menu li.active a {
+.crypt-mobile-menu .nav-bar-right li.active a {
     border-bottom: none;
 }
 
-.crypt-mobile-menu .crypt-heading-menu .crypt-box-menu {
+.crypt-mobile-menu .nav-bar-right .crypt-box-menu {
     display: inline-block;
     margin: 0;
     margin-left: 10px;
@@ -894,14 +841,7 @@ color: #fff;
     margin-top: 15px;
 }
 
-img.crypt-market-cap-logo {
-    margin-top: -3px;
-}
 
-img.wallet {
-    margin: 20px auto 0 auto;
-    width: 30px;
-}
 
 /*---------------------------------------
 ------------------- chart -----------------

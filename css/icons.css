@@ -6,6 +6,21 @@
     font-style: normal
 }
 
+.crypt-logo img {
+    margin: 10px;
+    height: 50px !important;
+}
+
+img.coin-icon {
+    margin-top: -3px;
+    padding-right: 0.5rem;
+}
+
+img.wallet {
+    margin: 20px auto 0 auto;
+    width: 30px;
+}
+
 .cf {
     display: inline-block;
     font: normal normal normal 14px/1 CryptoFont;
