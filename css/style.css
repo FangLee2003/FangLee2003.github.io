@@ -2,10 +2,10 @@ body {
     background: #0f0c29; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    overflow-x: hidden;
-    margin: 5rem 2rem;
     color: #fff;
     font-size: 13px;
+    overflow-x: hidden;
+    margin: 5rem 2rem;
 }
 
 footer {
@@ -37,14 +37,6 @@ footer {
     width: 4.5rem;
 }
 
-.form-control {
-    color: #ffffff;
-    background-color: rgba(14, 22, 45, 0.2);
-    background-clip: padding-box;
-    border: 1px solid #2f3a56;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 
 .bg-white {
     background: #fff;
@@ -205,7 +197,6 @@ g[opacity="0.4"] {
 
 .button-green {
     background: #49c279;
-
     color: #fff;
     padding: 9px;
     text-align: center;
@@ -218,6 +209,7 @@ g[opacity="0.4"] {
 
 .button-green:hover {
     background: #34a560;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -235,8 +227,9 @@ g[opacity="0.4"] {
 }
 
 .button-red:hover {
-    text-decoration: none;
     background: #ca3a28;
+    color: #fff;
+    text-decoration: none;
 }
 
 .crypt-header {
@@ -742,6 +735,10 @@ ul.nav-tabs li a.active {
 }
 
 
+.scroll-tab::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
 .scroll-tab {
     height: 21.4rem;
     overflow: scroll;
@@ -766,7 +763,7 @@ td, th {
 }
 
 .tab-content table thead tr {
-
+color: #fff;
     cursor: none;
     background: rgba(19, 26, 51, 0.5);
 }
@@ -1313,21 +1310,6 @@ img.wallet {
     color: #49c279;
 }
 
-select.crypt-image-select {
-    padding: 5px;
-    width: 100%;
-    border: 1px solid #f1f1f1;
-    outline: none;
-}
-
-select.crypt-image-select {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #2f3a56;
-    outline: none;
-    color: #ddd;
-    background: #131a33;
-}
 
 select.crypt-image-select option {
 }

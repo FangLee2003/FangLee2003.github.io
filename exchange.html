@@ -7,6 +7,7 @@
     <link rel="icon" href="images/logo2.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/ui.css">
 </head>
@@ -59,28 +60,32 @@
         <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-8">
             <div id="crypt-candle-chart"></div>
         </div>
-        <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <div class="crypt-boxed-area mb-3">
-                <div class="crypt-buy-sell-form">
-                    <div class="form-group mt-2">
-                        <select class="crypt-image-select" required>
-                            <option value="1">Bitcoin</option>
-                            <option value="2">ETH</option>
-                            <option value="3">Dogecoin</option>
-                        </select>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="number" class="form-control" placeholder="Amount"></div>
-                    <div class="row sm-gutters">
-                        <div class="col-md-4-5">
+        <div class="col-md-4">
+            <div class="form">
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            <select required>
+                                <option value="1">Bitcoin</option>
+                                <option value="2">ETH</option>
+                                <option value="3">Dogecoin</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="number" placeholder="Amount">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <a href="" class="button-green">Buy</a>
-                        </div>
-                        <div class="col-md-4-5">
+                        </td>
+                        <td>
                             <a href="" class="button-red">Sell</a>
-                        </div>
-                    </div>
-
-                </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="tab-content scroll-tab">
                 <div role="tabpanel" class="tab-pane active" id="closed-orders">
