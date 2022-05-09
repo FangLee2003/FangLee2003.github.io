@@ -1,25 +1,14 @@
 body {
-    background: #f9faff;
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow-x: hidden;
     margin: 5rem 2rem;
+    color: #fff;
     font-size: 13px;
 }
 
 footer {
-    margin-top: 2rem;
-}
-
-iframe body {
-    margin: 30px;
-}
-
-/*------------- dark theme -------------*/
-.crypt-dark {
-    background: #0e162d;
-}
-
-.crypt-dark .icon-big {
-    color: #fff;
 }
 
 .crypt-dark .input-group select {
@@ -27,28 +16,18 @@ iframe body {
     border: 1px solid #2f3a56;
 }
 
-.crypt-dark h1,
-.crypt-dark h2,
-.crypt-dark h3,
-.crypt-dark h4,
-.crypt-dark h5,
-.crypt-dark h6,
-.crypt-dark p,
-.crypt-dark a {
-    color: #fff;
-}
 
 .crypt-dark-segment {
     background: #131722;
 }
 
 .crypt-deepblue-segment {
-    background: #131a33;
-    border: 1px solid #2f3a56;
-    border-radius: 3px;
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    background: rgba(19, 26, 51, 0.2);
 }
 
-body.crypt-dark .input-group-text {
+.input-group-text {
     color: #e9ecef;
     text-align: center;
     white-space: nowrap;
@@ -58,7 +37,7 @@ body.crypt-dark .input-group-text {
     width: 4.5rem;
 }
 
-body.crypt-dark .form-control {
+.form-control {
     color: #ffffff;
     background-color: #0e162d;
     background-clip: padding-box;
@@ -124,7 +103,7 @@ g[opacity="0.4"] {
 }
 
 .crypt-btn {
-    color: #555;
+    color: #fff;
     padding: 15px 20px;
     background: #fff;
     text-decoration: none;
@@ -159,11 +138,11 @@ g[opacity="0.4"] {
 
 .crypt-btn:hover {
     text-decoration: none;
-    color: #555;
+    color: #fff;
     box-shadow: 0 3px 30px #f1f1f1;
 }
 
-body.crypt-dark .crypt-btn:hover {
+.crypt-btn:hover {
     box-shadow: none;
 }
 
@@ -173,17 +152,17 @@ body.crypt-dark .crypt-btn:hover {
 
 .crypt-btn-green {
     background: #49c279;
-    color: #fff;
+
 }
 
 .crypt-btn-red {
     background: #f7614e;
-    color: #fff;
+
 }
 
 .crypt-btn-green:hover,
 .crypt-btn-red:hover {
-    color: #fff;
+
 }
 
 .fright {
@@ -200,15 +179,16 @@ body.crypt-dark .crypt-btn:hover {
     background: #fff;
 }
 
-body.crypt-dark .crypt-bg-head {
+.crypt-bg-head {
     background: #1f2638;
     padding: 13px;
 }
 
-body.crypt-dark .crypt-boxed-area {
-    background: #131a33;
-    border: thin solid #363c4e;
-    color: #fff;
+.crypt-boxed-area {
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    background: rgba(19, 26, 51, 0.2);
+
 }
 
 .crypt-up {
@@ -225,6 +205,7 @@ body.crypt-dark .crypt-boxed-area {
 
 .button-green {
     background: #49c279;
+
     color: #fff;
     padding: 9px;
     text-align: center;
@@ -238,7 +219,6 @@ body.crypt-dark .crypt-boxed-area {
 .button-green:hover {
     background: #34a560;
     text-decoration: none;
-    color: #fff;
 }
 
 .button-red {
@@ -256,7 +236,6 @@ body.crypt-dark .crypt-boxed-area {
 
 .button-red:hover {
     text-decoration: none;
-    color: #fff;
     background: #ca3a28;
 }
 
@@ -390,7 +369,7 @@ body.crypt-dark .crypt-boxed-area {
 }
 
 .crypt-heading-menu li a {
-    color: #555;
+    color: #fff;
     text-decoration: none;
     transition: all 0.4s ease;
     padding: 9px 0px;
@@ -410,14 +389,14 @@ body.crypt-dark .crypt-boxed-area {
 
 .crypt-dark .crypt-header {
     box-shadow: none;
-    background: #202943;
+    background: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
     height: 70px;
-    color: #fff;
+
 }
 
 .crypt-dark .crypt-mega-dropdown-menu {
@@ -533,7 +512,7 @@ body.crypt-dark .crypt-boxed-area {
 }
 
 .crypt-dark .crypt-heading-menu li a {
-    color: #fff;
+
     text-decoration: none;
     transition: all 0.4s ease;
     padding: 9px 0px;
@@ -656,7 +635,7 @@ body.crypt-dark .crypt-boxed-area {
     padding-top: 115px;
 }
 
-body.crypt-dark .crypt-side-menu {
+.crypt-side-menu {
     background: #131a33 !important;
 }
 
@@ -678,14 +657,14 @@ body.crypt-dark .crypt-side-menu {
 }
 
 .crypt-side-menu ul li a {
-    color: #555;
+    color: #fff;
     font-weight: 600 !important;
     text-decoration: none;
     position: relative;
 }
 
-body.crypt-dark .crypt-side-menu ul li a {
-    color: #fff;
+.crypt-side-menu ul li a {
+
 }
 
 .crypt-side-menu ul li a:after {
@@ -736,10 +715,32 @@ ul.nav-tabs li a.active {
     border-bottom: 3px solid #f7614e;
 }
 
-.tab-content {
-    border: thin solid #363c4e;
-    border-radius: 3px;
+ul.nav-tabs {
+    padding: 13px 0px;
+    border: none;
+    background: #1f2638;
 }
+
+ul.nav-tabs li {
+    padding: 0 13px;
+}
+
+ul.nav-tabs li a {
+
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 12px;
+    font-size: 13px;
+}
+
+ul.nav-tabs li {
+}
+
+ul.nav-tabs li a.active {
+    border-bottom: 3px solid #f7614e;
+}
+
 
 .scroll-tab {
     height: 21.4rem;
@@ -748,116 +749,47 @@ ul.nav-tabs li a.active {
     scrollbar-width: none; /* Firefox */
 }
 
+td, th {
+    border: none !important;
+}
+
 .scroll-tab::-webkit-scrollbar {
     display: none;
 }
 
-.tab-content thead th {
-    background: #1f2638;
+.tab-content {
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.tab-content table thead th {
+    background: rgba(31, 38, 56, 0.5);
     position: sticky;
     top: 0;
 }
 
-.crypt-table-danger {
-    background: #ffedea !important;
-}
+.tab-content table thead tr {
 
-.crypt-table-success {
-    background: #f9fcff !important;
-}
-
-.crypt-table-hover tr:hover {
-    background: #ffedea !important;
-}
-
-table td,
-table th {
-    border: none !important;
-}
-
-/*---- Dark ----*/
-body.crypt-dark .crypt-market-status {
-    background: #fff;
-    box-shadow: none;
-}
-
-body.crypt-dark ul.nav-tabs {
-    padding: 13px 0px;
-    border: none;
-    background: #1f2638;
-}
-
-body.crypt-dark ul.nav-tabs li {
-    padding: 0 13px;
-}
-
-body.crypt-dark ul.nav-tabs li a {
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-bottom: 12px;
-    font-size: 13px;
-}
-
-body.crypt-dark ul.nav-tabs li {
-}
-
-body.crypt-dark ul.nav-tabs li a.active {
-    border-bottom: 3px solid #f7614e;
-}
-
-body.crypt-dark .tab-content table {
-    margin-bottom: 0;
-}
-
-body.crypt-dark .tab-content table thead {
-    background: #131722;
-    color: #fff;
-}
-
-body.crypt-dark .tab-content table thead tr {
     cursor: none;
-    background: #1f2638 !important;
+    background: rgba(19, 26, 51, 0.5);
 }
 
-body.crypt-dark .tab-content table tbody {
-
-}
-
-body.crypt-dark .tab-content table tr:hover {
-    background: #242c40 !important;
+.tab-content table tr:hover {
+    background: rgba(36, 44, 64, 0.2) !important;
     cursor: pointer;
 }
 
-body.crypt-dark .tab-content table tr:nth-of-type(odd) {
-    background: #131a33;
-    color: #fff;
+.tab-content table tr:nth-of-type(odd) {
+    background: rgba(19, 26, 51, 0.5);
+
 }
 
-body.crypt-dark .tab-content table tr:nth-of-type(even) {
-    background: #11152b;
-    color: #fff;
+.tab-content table tr:nth-of-type(even) {
+    background: rgba(17, 21, 43, 0.5);
+
 }
 
-body.crypt-dark .crypt-table-danger {
-    background: #ffedea !important;
-}
-
-body.crypt-dark .crypt-table-success {
-    background: #f9fcff !important;
-}
-
-body.crypt-dark .crypt-table-hover tr:hover {
-    background: #ffedea !important;
-}
-
-body.crypt-dark table td,
-body.crypt-dark table th {
-    border: none !important;
-}
-
-body.crypt-dark .no-orders {
+.no-orders {
     background: #131a33;
 }
 
@@ -867,9 +799,10 @@ body.crypt-dark .no-orders {
     width: 100%;
     height: 27rem;
     margin-bottom: 2rem;
-    border: 0.1px solid #343a40;
+    padding: 10px;
+    border: 0.1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2px;
-    background: #131a33;
+    background: rgba(19, 26, 51, 0.2);
 }
 
 .crypto-depth-chart-small-height {
@@ -884,18 +817,19 @@ body.crypt-dark .no-orders {
 /*-------------------------------
 --------- buy sell form ----------
 --------------------------------------*/
-.crypt-buy-sell-form > p {
-    padding: 10px;
+.crypt-buy-sell-form {
+    padding: 20px;
     margin-bottom: 0;
 }
 
-.crypt-buy {
-    padding: 10px 20px 20px 20px;
+/*0--- market Capacity ----*/
+
+.crypt-table-striped tbody tr:nth-of-type(odd) {
+    background: rgba(19, 26, 51, 0.5);
 }
 
-/*0--- market Capacity ----*/
 .crypt-table-striped tbody tr:nth-of-type(even) {
-    background-color: #f7fbff;
+    background: rgba(17, 21, 43, 0.5);
 }
 
 .crypt-table-market-cap {
@@ -903,18 +837,19 @@ body.crypt-dark .no-orders {
     font-size: 15px;
 }
 
-body.crypt-dark .crypt-table-market-cap {
+
+.crypt-table-market-cap {
     background: none;
     font-size: 15px;
-    color: #fff;
+
 }
 
 .crypt-table-market-cap thead {
     background: #ecf4fe;
 }
 
-body.crypt-dark .crypt-table-market-cap thead {
-    background: #1f2638;
+.crypt-table-market-cap thead {
+    background: rgba(31, 38, 56, 0.5);
 }
 
 .crypt-table-market-cap thead tr th {
@@ -927,7 +862,8 @@ body.crypt-dark .crypt-table-market-cap thead {
 }
 
 .crypt-table-market-cap tbody tr:hover {
-    background: #242c40 !important
+    background: rgba(36, 44, 64, 0.2);
+!important
 }
 
 .crypt-table-market-cap tbody tr th {
@@ -947,11 +883,11 @@ body.crypt-dark .crypt-table-market-cap thead {
 }
 
 .crypt-table-market-cap tbody tr td a {
-    color: #555;
+    color: #fff;
 }
 
-body.crypt-dark .crypt-table-market-cap tbody tr td a {
-    color: #fff;
+.crypt-table-market-cap tbody tr td a {
+
 }
 
 .crypt-table-market-cap tbody tr td:last-child {
@@ -986,7 +922,6 @@ img.wallet {
     position: absolute;
     content: '';
     width: calc(100% - 10px);
-    background: #fff;
     top: 0;
     left: 5px;
     height: 100%;
@@ -994,8 +929,8 @@ img.wallet {
     box-shadow: 0 3px 15px #f1f1f1;
 }
 
-body.crypt-dark .crypt-fulldiv-linechart:after {
-    background: #202943;
+.crypt-fulldiv-linechart:after {
+    background: rgba(32, 41, 67, 0.5);
     box-shadow: none;
 }
 
@@ -1005,7 +940,6 @@ body.crypt-dark .crypt-fulldiv-linechart:after {
 
 .crypt-fulldiv-linechart .crypt-individual-marketcap canvas {
     margin-left: -5px;
-
 }
 
 .crypt-fulldiv-linechart .coin-meta-data {
@@ -1059,7 +993,7 @@ body.crypt-dark .crypt-fulldiv-linechart:after {
     border: 1px solid #ecf4fe;
 }
 
-body.crypt-dark .crypt-currency-slider {
+.crypt-currency-slider {
     border: none;
 }
 
@@ -1068,7 +1002,7 @@ body.crypt-dark .crypt-currency-slider {
     /* padding: 40px; */
 }
 
-body.crypt-dark .crypt-slider-content {
+.crypt-slider-content {
     background: #121a2f;
 }
 
@@ -1077,7 +1011,7 @@ body.crypt-dark .crypt-slider-content {
     border-right: 1px solid #ecf4fe;
 }
 
-body.crypt-dark .crypt-slider-content .crypt-slider-balance {
+.crypt-slider-content .crypt-slider-balance {
     border-right: 1px solid #202943;
 }
 
@@ -1116,13 +1050,13 @@ body.crypt-dark .crypt-slider-content .crypt-slider-balance {
     padding: 10px;
 }
 
-body.crypt-dark .crypt-dash-search input[type=search] {
+.crypt-dash-search input[type=search] {
     height: 48px;
     border: 1px solid #202943;
     width: 100%;
     background: #202943;
     padding: 10px;
-    color: #fff;
+
 }
 
 .crypt-dash-search input[type=search]:focus {
@@ -1143,8 +1077,8 @@ body.crypt-dark .crypt-dash-search input[type=search] {
     /* right: 0; */
 }
 
-body.crypt-dark .crypt-dash-search button[type=submit] i {
-    color: #fff;
+.crypt-dash-search button[type=submit] i {
+
     /* right: 0; */
 }
 
@@ -1163,7 +1097,7 @@ body.crypt-dark .crypt-dash-search button[type=submit] i {
     margin-bottom: 10px;
 }
 
-body.crypt-dark .crypt-big-list li {
+.crypt-big-list li {
     border: 1px solid #2f3a56;
 }
 
@@ -1171,7 +1105,7 @@ body.crypt-dark .crypt-big-list li {
     display: block;
     padding: 30px;
     text-decoration: none;
-    color: #555;
+    color: #fff;
     font-weight: 800;
     font-size: 15px;
     transition: all 0.4s ease;
@@ -1181,8 +1115,8 @@ body.crypt-dark .crypt-big-list li {
     -ms-transition: all 0.4s ease;
 }
 
-body.crypt-dark .crypt-big-list li a {
-    color: #fff;
+.crypt-big-list li a {
+
 }
 
 .crypt-big-list li a:hover,
@@ -1190,9 +1124,9 @@ body.crypt-dark .crypt-big-list li a {
     background: #ffedea;
 }
 
-body.crypt-dark .crypt-big-list li a:hover,
-body.crypt-dark .crypt-big-list li a:focus {
-    background: #242c40 !important;
+.crypt-big-list li a:hover,
+.crypt-big-list li a:focus {
+    background: rgba(19, 26, 51, 0.2);
 }
 
 .crypt-big-list li:last-child {
@@ -1228,8 +1162,8 @@ body.crypt-dark .crypt-big-list li a:focus {
     margin-top: 10px;
 }
 
-body.crypt-dark .crypt-withdraw-body {
-    background: #131a33 !important;
+.crypt-withdraw-body {
+    background: rgba(19, 26, 51, 0.2);
 }
 
 .crypt-withdraw-body .nav-pills {
@@ -1238,16 +1172,16 @@ body.crypt-dark .crypt-withdraw-body {
 
 .crypt-withdraw-body .nav-pills a {
     font-weight: 600;
-    color: #555;
+    color: #fff;
     font-size: 13px;
     font-weight: 800;
 }
 
-body.crypt-dark .crypt-withdraw-body .nav-pills a {
-    color: #fff;
+.crypt-withdraw-body .nav-pills a {
+
 }
 
-body.crypt-dark .crypt-withdraw-body .nav-pills a.active {
+.crypt-withdraw-body .nav-pills a.active {
 
     color: #f7614e;
 }
@@ -1269,7 +1203,7 @@ body.crypt-dark .crypt-withdraw-body .nav-pills a.active {
     padding: 30px;
 }
 
-body.crypt-dark .crypt-withdraw-body .tab-content {
+.crypt-withdraw-body .tab-content {
     border-left: 1px solid #2f3a56;
     padding: 30px;
 }
@@ -1310,9 +1244,9 @@ body.crypt-dark .crypt-withdraw-body .tab-content {
     font-weight: 600;
 }
 
-body.crypt-dark .crypt-radio-boxed label {
+.crypt-radio-boxed label {
     display: block;
-    color: #fff;
+
     position: relative;
     font-weight: 300;
     font-size: 20px;
@@ -1330,7 +1264,7 @@ body.crypt-dark .crypt-radio-boxed label {
 }
 
 .crypt-radio-boxed:hover label {
-    color: #555;
+    color: #fff;
 }
 
 .crypt-radio-boxed label img {
@@ -1389,7 +1323,7 @@ select.crypt-image-select {
     outline: none;
 }
 
-body.crypt-dark select.crypt-image-select {
+select.crypt-image-select {
     padding: 10px;
     width: 100%;
     border: 1px solid #2f3a56;
@@ -1512,12 +1446,12 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/*------- Login / Register ------------*/
+/*------- Login / Register -------*/
 .main-form {
     margin-top: 1rem;
     padding: 2rem 2rem 4rem;
-    background: #131a33;
-    border: thin solid #363c4e;
+    background: rgba(19, 26, 51, 0.2);
+    border: thin solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
@@ -1530,6 +1464,7 @@ body {
 .main-form a {
     font-size: 15px;
     font-weight: 600;
+    color: #fff;
 }
 
 .main-form input {
