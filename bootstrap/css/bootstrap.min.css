@@ -3823,6 +3823,7 @@ input[type="button"].btn-block {
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .input-group > .form-control,
