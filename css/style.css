@@ -1417,6 +1417,6 @@ row.md-gutter [class*='col-'] {
     height: 50px;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: #11152b;
-    border: 1px solid #2c3552;
+    background-color: rgba(17, 21, 43, 0.2);
+    border: thin solid rgba(255, 255, 255, 0.2);
 }
