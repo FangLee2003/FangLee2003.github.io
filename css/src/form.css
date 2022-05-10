@@ -35,11 +35,38 @@
 
 .form input {
     width: 100%;
-    height: 2.7rem;
+    height: 2.6rem;
     background: rgba(19, 26, 51, 0.2);
     color: #fff;
-    border: 1px solid #2f3a56;
+    border: thin solid rgba(255, 255, 255, 0.2);
     border-radius: 0.25rem;
     padding: 10px;
 }
 
+.form a, .form a:hover {
+    color: #fff;
+}
+
+.sign-in {
+    background: rgba(255, 255, 255, 0.9);
+    width: 30%;
+    margin: 4rem auto 1rem;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+.sign-in input {
+    background: #fff;
+}
+
+.sign-in a {
+    color: #302b63;
+}
+.sign-in a:hover {
+    color: #302b63;
+}
+
+.sign-in h1 {
+    margin-bottom: 2rem;
+    color: #302b63;
+}

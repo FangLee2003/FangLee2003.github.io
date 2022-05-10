@@ -3,10 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Crypto</title>
+    <title>Crypto Register</title>
     <link rel="icon" href="images/logo2.png">
     <link rel='stylesheet' href="css/main.css" type="text/css">
 </head>
+<style>
+    body {
+        background-image: url('./images/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
 
 <body>
 <header>
@@ -23,44 +30,51 @@
                 <li><a href="index.html">Market cap</a></li>
                 <li><a href="exchange.html">Exchange</a></li>
                 <li><a href="withdraw.html">Account</a></li>
-                <li class="crypt-box-menu nav-bar-red"><a href="register.html">register</a></li>
-                <li class="crypt-box-menu nav-bar-green"><a href="login.html">login</a></li>
+                <li class="nav-bar-red"><a href="register.html">register</a></li>
+                <li class="nav-bar-green"><a href="login.html">login</a></li>
             </ul>
         </div>
     </div>
 </header>
 
-<div class="flex-container">
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6 text-center">
-            <div class="logo">
-                <img src="images/logo2.png" alt="logo-image">
-            </div>
-            <h2 class="p-4">Welcome To Register</h2>
-            <div class="main-form">
-                <form action="" class="text-left">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email/cellphone">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="6-20 letters and numbers">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="password"
-                           placeholder="6-20 letters and numbers">
-                    <div class="my-1">
-                        <div class="custom-control custom-checkbox mr-sm-2">
-                            <input type="checkbox" class="custom-control-input" id="terms-agree">
-                            <label class="custom-control-label" for="terms-agree">I agree to the terms of
-                                services</label>
-                        </div>
-                    </div>
-                    <input type="submit" value="Sign Up" class="button-red">
-                    <p class="float-left"><a href="login.html">Log In</a></p>
-                    <p class="float-right"><a href="forgot.html">Recover Password</a></p>
-                </form>
-            </div>
-        </div>
-    </div>
+<!-- Main Content -->
+<div class="form sign-in">
+    <table>
+        <tr>
+            <th>
+                <div class="logo">
+                    <img src="images/logo2.png" alt="logo-image">
+                    <h1>Register</h1>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="Email / phone" name="bank-account">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="Password" name="amount">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="Confirm Password" name="swift">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="button-purple">Sign up</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="float-left"><a href="login.html">Login</a></p>
+                <p class="float-right"><a href="forgot.html">Recover Password</a></p>
+            </td>
+        </tr>
+    </table>
 </div>
 
 <script src="amc/core.js"></script>
