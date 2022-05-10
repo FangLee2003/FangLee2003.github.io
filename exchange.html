@@ -5,20 +5,14 @@
     <meta charset="UTF-8">
     <title>Crypto</title>
     <link rel="icon" href="images/logo2.png">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/ui.css">
+    <link rel='stylesheet' href="css/main.css" type="text/css">
 </head>
 
 <body>
 <header>
     <div class="nav-bar">
         <div class="nav-bar-left">
-            <div class="crypt-logo">
+            <div class="logo">
                 <a href="index.html">
                     <img src="images/logo2.png" alt="">
                 </a>
@@ -29,124 +23,122 @@
                 <li><a href="index.html">Market cap</a></li>
                 <li><a href="exchange.html">Exchange</a></li>
                 <li><a href="withdraw.html">Account</a></li>
-                <li class="crypt-box-menu menu-red"><a href="register.html">register</a></li>
-                <li class="crypt-box-menu menu-green"><a href="login.html">login</a></li>
+                <li class="crypt-box-menu nav-bar-red"><a href="register.html">register</a></li>
+                <li class="crypt-box-menu nav-bar-green"><a href="login.html">login</a></li>
             </ul>
         </div>
     </div>
 </header>
 
-<div class="container-fluid">
-    <div class="row sm-gutters">
-        <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-            <div id="crypt-candle-chart"></div>
+<div class="flex-container">
+    <div class="col-2-3">
+        <div id="crypt-candle-chart"></div>
+    </div>
+    <div class="col-1-3">
+        <div class="form">
+            <table>
+                <tr>
+                    <th colspan="2">
+                        <select required>
+                            <option value="1">Bitcoin</option>
+                            <option value="2">ETH</option>
+                            <option value="3">Dogecoin</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="number" placeholder="Amount">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="" class="button-green">Buy</a>
+                    </td>
+                    <td>
+                        <a href="" class="button-red">Sell</a>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="col-md-4">
-            <div class="form">
-                <table>
+        <div class="tab-content scroll-tab">
+            <div role="tabpanel" class="tab-pane active" id="closed-orders">
+                <table class="table table-striped">
+                    <thead>
                     <tr>
-                        <th colspan="2">
-                            <select required>
-                                <option value="1">Bitcoin</option>
-                                <option value="2">ETH</option>
-                                <option value="3">Dogecoin</option>
-                            </select>
-                        </th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col">Buy/sell</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Dogecoin</td>
+                        <td class="green-text">Buy</td>
+                        <td class="green-text">0.000056</td>
+                        <td class="green-text">0.000056</td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <input type="number" placeholder="Amount">
-                        </td>
+                        <th>22:35:59</th>
+                        <td>Bitcoin</td>
+                        <td class="red-text">Sell</td>
+                        <td class="red-text">0.000056</td>
+                        <td class="red-text">0.000056</td>
                     </tr>
                     <tr>
-                        <td>
-                            <a href="" class="button-green">Buy</a>
-                        </td>
-                        <td>
-                            <a href="" class="button-red">Sell</a>
-                        </td>
+                        <th>22:35:59</th>
+                        <td>Dogecoin</td>
+                        <td class="green-text">Buy</td>
+                        <td class="green-text">0.000056</td>
+                        <td class="green-text">0.000056</td>
                     </tr>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Bitcoin</td>
+                        <td class="red-text">Sell</td>
+                        <td class="red-text">0.000056</td>
+                        <td class="red-text">0.000056</td>
+                    </tr>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Dogecoin</td>
+                        <td class="green-text">Buy</td>
+                        <td class="green-text">0.000056</td>
+                        <td class="green-text">0.000056</td>
+                    </tr>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Bitcoin</td>
+                        <td class="red-text">Sell</td>
+                        <td class="red-text">0.000056</td>
+                        <td class="red-text">0.000056</td>
+                    </tr>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Dogecoin</td>
+                        <td class="green-text">Buy</td>
+                        <td class="green-text">0.000056</td>
+                        <td class="green-text">0.000056</td>
+                    </tr>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Bitcoin</td>
+                        <td class="red-text">Sell</td>
+                        <td class="red-text">0.000056</td>
+                        <td class="red-text">0.000056</td>
+                    </tr>
+                    <tr>
+                        <th>22:35:59</th>
+                        <td>Dogecoin</td>
+                        <td class="green-text">Buy</td>
+                        <td class="green-text">0.000056</td>
+                        <td class="green-text">0.000056</td>
+                    </tr>
+                    </tbody>
                 </table>
-            </div>
-            <div class="tab-content scroll-tab">
-                <div role="tabpanel" class="tab-pane active" id="closed-orders">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col">Time</th>
-                            <th scope="col">Currency</th>
-                            <th scope="col">Buy/sell</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Dogecoin</td>
-                            <td class="crypt-up">Buy</td>
-                            <td class="crypt-up">0.000056</td>
-                            <td class="crypt-up">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Bitcoin</td>
-                            <td class="crypt-down">Sell</td>
-                            <td class="crypt-down">0.000056</td>
-                            <td class="crypt-down">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Dogecoin</td>
-                            <td class="crypt-up">Buy</td>
-                            <td class="crypt-up">0.000056</td>
-                            <td class="crypt-up">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Bitcoin</td>
-                            <td class="crypt-down">Sell</td>
-                            <td class="crypt-down">0.000056</td>
-                            <td class="crypt-down">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Dogecoin</td>
-                            <td class="crypt-up">Buy</td>
-                            <td class="crypt-up">0.000056</td>
-                            <td class="crypt-up">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Bitcoin</td>
-                            <td class="crypt-down">Sell</td>
-                            <td class="crypt-down">0.000056</td>
-                            <td class="crypt-down">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Dogecoin</td>
-                            <td class="crypt-up">Buy</td>
-                            <td class="crypt-up">0.000056</td>
-                            <td class="crypt-up">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Bitcoin</td>
-                            <td class="crypt-down">Sell</td>
-                            <td class="crypt-down">0.000056</td>
-                            <td class="crypt-down">0.000056</td>
-                        </tr>
-                        <tr>
-                            <th>22:35:59</th>
-                            <td>Dogecoin</td>
-                            <td class="crypt-up">Buy</td>
-                            <td class="crypt-up">0.000056</td>
-                            <td class="crypt-up">0.000056</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
         </div>
     </div>

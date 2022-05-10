@@ -1,15 +1,27 @@
-.container-full-width {
+.flex-container {
     display: flex;
     flex-flow: wrap;
     width: 100%;
+    margin: 5rem 0;
 }
 
 .col-1-3 {
     width: 30%;
     margin: 0 1.5%;
 }
+
+.col-2-3 {
+    width: 60%;
+    margin: 0 1.5%;
+}
+
 @media screen and (max-width: 1336px) {
-    .col-1-3{
+    .col-1-3 {
+        width: 80%;
+        margin: 20px 10%;
+    }
+
+    .col-2-3 {
         width: 80%;
         margin: 20px 10%;
     }

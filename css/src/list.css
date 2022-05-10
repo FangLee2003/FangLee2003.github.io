@@ -1,0 +1,39 @@
+.list {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.list li {
+    list-style: none;
+    border: 1px solid #2f3a56;
+    margin: 5px 0;
+}
+
+.list li:nth-child(odd) {
+    background: rgba(71, 88, 74, 0.1);
+}
+
+.list li a {
+    display: block;
+    padding: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.list li a:hover,
+.list li a:focus {
+    background: rgba(19, 26, 51, 0.2);
+}
+
+.scroll-tab::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+.scroll-tab {
+    height: 21.4rem;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

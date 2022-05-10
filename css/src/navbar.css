@@ -11,7 +11,6 @@
     width: 30%;
     margin: 0 1%;
 }
-
 .nav-bar-right {
     width: 66%;
     display: block;
@@ -49,4 +48,21 @@
 .nav-bar-right li.active a {
     color: #f7614e;
     border-bottom: 1px solid #f7614e;
+}
+
+.nav-bar-red {
+    background: #f7614e;
+}
+
+.nav-bar-red a {
+    color: #fff !important;
+}
+
+
+.nav-bar-green {
+    background: #49c279;
+}
+
+.nav-bar-green a {
+    color: #fff !important;
 }
