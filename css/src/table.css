@@ -48,6 +48,7 @@
 .history-table th,
 .history-table td {
     padding: 0.5rem;
+    text-align: center;
 }
 
 .history-table thead tr {
@@ -62,5 +63,21 @@
 
 .history-table tr:hover {
     background-color: rgba(14, 22, 45, 0.4);
-    cursor: pointer;
 }
+
+.marketcap-table thead tr {
+    position: relative;
+}
+
+.marketcap-table thead th {
+    padding: 1.5rem;
+}
+
+.marketcap-table tbody tr td:last-child {
+    max-width: 100px;
+}
+
+.marketcap-table canvas {
+    display: inline !important;
+}
+

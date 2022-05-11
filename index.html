@@ -7,7 +7,11 @@
     <link rel="icon" href="images/logo2.png">
     <link rel='stylesheet' href="css/main.css" type="text/css">
 </head>
-
+<style>
+    h1 {
+        margin: 2rem 0 1rem;
+    }
+</style>
 <body>
 <header>
     <div class="nav-bar">
@@ -23,8 +27,8 @@
                 <li><a href="index.html">Market cap</a></li>
                 <li><a href="exchange.html">Exchange</a></li>
                 <li><a href="withdraw.html">Account</a></li>
-                <li class="crypt-box-menu nav-bar-red"><a href="register.html">register</a></li>
-                <li class="crypt-box-menu nav-bar-green"><a href="login.html">login</a></li>
+                <li class="nav-bar-red"><a href="register.html">register</a></li>
+                <li class="nav-bar-green"><a href="login.html">login</a></li>
             </ul>
         </div>
     </div>
@@ -32,299 +36,245 @@
 
 <!-- Main Content -->
 <div class="flex-container">
-    <div class="row sm-gutters">
-        <div class="col-md-12">
-            <div class="text-center">
-                <h1 class="mt-4 mb-3"><b>Total Market Cap: <span class="green-text">$1001,056,234,480</span></b>
-                </h1>
-            </div>
-        </div>
-    </div>
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselIndicators" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="crypt-fulldiv-linechart mt-4">
-                    <h4 class="coinname"><img src="images/coins/btc.png" width="20" class="coin-icon"
-                                              alt="logo"> Bitcoin</h4>
-                    <div class="crypt-individual-marketcap" data-charts="[65,59,81,81,56,55,40,80,90]"
-                         data-bg="fdddb7" data-border="f8a036">
-                        <canvas height="50"></canvas>
-                    </div>
-                    <div class="coin-meta-data text-center">
-                        <h5 class="red-text">-9.05% <img src="images/download-arrow.svg" width="15"
-                                                         class="coin-icon" alt="logo"></h5>
-                        <h4>$4,056,894.05</h4>
-                        <p><b>MARKET CAP</b></p>
+    <div class="col-2-3 text-center" style="margin: 0 20%;">
+        <h1><b>Total Market Cap: <span class="green-text">$1001,056,234,480</span></b></h1>
+
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="line-chart">
+                        <h4 class="coin-name text-center">
+                            <img src="images/coins/btc.png" width="25" class="coin-icon" alt="icon">
+                            Bitcoin
+                        </h4>
+                        <div class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="f8a036">
+                            <canvas height="100"></canvas>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="crypt-fulldiv-linechart mt-4">
-                    <h4 class="coinname"><img src="images/coins/eth.png" width="20" class="coin-icon"
-                                              alt="logo"> Ethereum </h4>
-                    <div class="crypt-individual-marketcap" data-charts="[65,59,81,81,56,55,40,80,90]"
-                         data-bg="fff" data-border="6c757d">
-                        <canvas height="50"></canvas>
-                    </div>
-                    <div class="coin-meta-data text-center">
-                        <h5 class="green-text">+4.25% <img src="images/up-arrow.svg" width="15"
-                                                           class="coin-icon" alt="logo"></h5>
-                        <h4>$4,056,894.05</h4>
-                        <p><b>MARKET CAP</b></p>
+                <div class="carousel-item">
+                    <div class="line-chart">
+                        <h4 class="coin-name text-center">
+                            <img src="images/coins/eth.png" width="25" class="coin-icon" alt="icon">
+                            Ethereum
+                        </h4>
+                        <div class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="6c757d">
+                            <canvas height="100"></canvas>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="crypt-fulldiv-linechart mt-4">
-                    <h4 class="coinname"><img src="images/coins/doge.png" width="20" class="coin-icon"
-                                              alt="logo"> Dogecoin</h4>
-                    <div class="crypt-individual-marketcap" data-charts="[15,49,41,61,76,84,44,60,78]"
-                         data-bg="fcc6bf" data-border="fa9f93">
-                        <canvas height="50"></canvas>
-                    </div>
-                    <div class="coin-meta-data text-center">
-                        <h5 class="red-text">-4.05% <img src="images/download-arrow.svg" width="15"
-                                                         class="coin-icon" alt="logo"></h5>
-                        <h4>$4,056,894.05</h4>
-                        <p><b>MARKET CAP</b></p>
+                <div class="carousel-item">
+                    <div class="line-chart">
+                        <h4 class="coin-name text-center">
+                            <img src="images/coins/doge.png" width="25" class="coin-icon" alt="icon">
+                            Dogecoin
+                        </h4>
+                        <div class="marketcap-canvas" data-charts="[15,49,41,61,76,84,44,60,78]" data-border="c8c8c8">
+                            <canvas height="100"></canvas>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="crypt-fulldiv-linechart mt-4">
-                    <h4 class="coinname"><img src="images/coins/tether.png" width="20" class="coin-icon"
-                                              alt="logo"> Tether</h4>
-                    <div class="crypt-individual-marketcap" data-charts="[45,37,41,41,66,54,44,60,78]"
-                         data-bg="b8eefd" data-border="94e4fb">
-                        <canvas height="50"></canvas>
-                    </div>
-                    <div class="coin-meta-data text-center">
-                        <h5 class="red-text">-12.05% <img src="images/download-arrow.svg" width="15"
-                                                          class="coin-icon" alt="logo"></h5>
-                        <h4>$4,056,894.05</h4>
-                        <p><b>MARKET CAP</b></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="crypt-fulldiv-linechart mt-4">
-                    <h4 class="coinname"><img src="images/coins/solana.png" width="20" class="coin-icon"
-                                              alt="logo"> Solana</h4>
-                    <div class="crypt-individual-marketcap" data-charts="[55,47,41,66,79,54,23,60,78]"
-                         data-bg="fdc0de" data-border="fcb2d7">
-                        <canvas height="50"></canvas>
-                    </div>
-                    <div class="coin-meta-data text-center">
-                        <h5 class="green-text">+6.67% <img src="images/up-arrow.svg" width="15"
-                                                           class="coin-icon" alt="logo"></h5>
-                        <h4>$4,056,894.05</h4>
-                        <p><b>MARKET CAP</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="col md-12 text-center">
-        <h1 class="mt-5 mb-5 green-text"><b>Top 10 Cryptocurrencies</b></h1>
-    </div>
-    <div class="col-md-12">
-        <div class="table-responsive">
-            <table class="history-table table-striped crypt-table-market-cap">
-                <thead>
-                <tr>
-                    <th scope="col">Rank</th>
-                    <th scope="col" class="text-left pl-2">Name</th>
-                    <th scope="col">Market Cap</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">24 Hour Volume</th>
-                    <th scope="col">Change</th>
-                    <th scope="col">7 days</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th>1</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/btc.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">Bitcoin</a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="red-text"> -0.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]"
-                        data-bg="fcbcb3" data-border="dc3545">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/eth.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">Ethereum </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="red-text"> -4.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[34,54,23,56,76,78,34,56,45]"
-                        data-bg="d3f0df" data-border="dc3545">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/ltc.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">Litecoin</a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="green-text">3.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[55,40,80,90,65,59,81,81,56]"
-                        data-bg="d3f0df" data-border="8cd8aa">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/btcc.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html"> BTCC </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="red-text">-0.45%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[89,23,67,45,23,45,78,34,56,67]"
-                        data-bg="d3f0df" data-border="dc3545">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/xrp.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">
-                            XRP
-                        </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="green-text">6.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[34,45,56,67,65,45,34,23,45,56]"
-                        data-bg="d3f0df" data-border="8cd8aa">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/tron.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">TRON</a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="red-text">-6.7%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[45,34,45,56,67,45,56,67,78,67]"
-                        data-bg="d3f0df" data-border="dc3545">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>7</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/stlr.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">
-                            Steller
-                        </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="green-text">2.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[56,45,67,45,34,45,56,67,56,45]"
-                        data-bg="d3f0df" data-border="8cd8aa">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>8</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/tether.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">
+                <div class="carousel-item">
+                    <div class="line-chart">
+                        <h4 class="coin-name text-center">
+                            <img src="images/coins/tether.png" width="25" class="coin-icon" alt="icon">
                             Tether
-                        </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="green-text">5.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]"
-                        data-bg="d3f0df" data-border="8cd8aa">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>9</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/dash.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">
-                            Dash
-                        </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="green-text">2.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]"
-                        data-bg="d3f0df" data-border="8cd8aa">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                <tr>
-                    <th>10</th>
-                    <td class="text-left pl-2 font-weight-bold"><img src="images/coins/monero.png" width="20"
-                                                                     class="pr-1 coin-icon" alt="coin">
-                        <a href="index.html">
-                            Monero
-                        </a>
-                    </td>
-                    <td>$239048209</td>
-                    <td>$4559</td>
-                    <td>$2344234</td>
-                    <td class="green-text">3.04%</td>
-                    <td class="crypt-marketcap-canvas" data-charts="[65,81,40,80,56,59,81,55,90]"
-                        data-bg="d3f0df" data-border="8cd8aa">
-                        <canvas></canvas>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+                        </h4>
+                        <div class="marketcap-canvas" data-charts="[45,37,41,41,66,54,44,60,78]" data-border="94e4fb">
+                            <canvas height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="line-chart">
+                        <h4 class="coin-name text-center">
+                            <img src="images/coins/solana.png" width="25" class="coin-icon" alt="icon">
+                            Solana
+                        </h4>
+                        <div class="marketcap-canvas" data-charts="[55,47,41,66,79,54,23,60,78]" data-border="fcb2d7">
+                            <canvas height="100"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <p><i>*Coin Market Cap provides direct cryptocurrency market capitalization data</i></p>
-        <hr/>
+
+        <h1 class="green-text"><b>Top 10 Cryptocurrencies</b></h1>
+
+        <table class="history-table marketcap-table">
+            <thead>
+            <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Name</th>
+                <th scope="col">Market Cap</th>
+                <th scope="col">Price</th>
+                <th scope="col">24 Hour Volume</th>
+                <th scope="col">Change</th>
+                <th scope="col">7 days</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <td class="coin-name">
+                    <img src="images/coins/btc.png" width="20" class="coin-icon" alt="coin">
+                    Bitcoin
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="red-text"> -0.04%</td>
+                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="dc3545">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="coin-name">
+                    <img src="images/coins/eth.png" width="20" class="coin-icon" alt="coin">
+                    Ethereum
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="red-text"> -4.04%</td>
+                <td class="marketcap-canvas" data-charts="[34,54,23,56,76,78,34,56,45]" data-border="dc3545">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="coin-name">
+                    <img src="images/coins/ltc.png" width="20" class="coin-icon" alt="coin">
+                    Litecoin
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="green-text">3.04%</td>
+                <td class="marketcap-canvas" data-charts="[55,40,80,90,65,59,81,81,56]" data-border="8cd8aa">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="coin-name">
+                    <img src="images/coins/btcc.png" width="20" class="coin-icon" alt="coin">
+                    BTCC
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="red-text">-0.45%</td>
+                <td class="marketcap-canvas" data-charts="[89,23,67,45,23,45,78,34,56,67]" data-border="dc3545">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="coin-name">
+                    <img src="images/coins/xrp.png" width="20" class="coin-icon" alt="coin">
+                    XRP
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="green-text">6.04%</td>
+                <td class="marketcap-canvas" data-charts="[34,45,56,67,65,45,34,23,45,56]" data-border="8cd8aa">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td class="coin-name"><img src="images/coins/tron.png" width="20" class="coin-icon" alt="coin">
+                    TRON
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="red-text">-6.7%</td>
+                <td class="marketcap-canvas" data-charts="[45,34,45,56,67,45,56,67,78,67]" data-border="dc3545">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td class="coin-name">
+                    <img src="images/coins/stlr.png" width="20" class="coin-icon" alt="coin">
+                    Steller
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="green-text">2.04%</td>
+                <td class="marketcap-canvas" data-charts="[56,45,67,45,34,45,56,67,56,45]" data-border="8cd8aa">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td class="coin-name">
+                    <img src="images/coins/tether.png" width="20" class="coin-icon" alt="coin">
+                    Tether
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="green-text">5.04%</td>
+                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="8cd8aa">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td class="coin-name">
+                    <img src="images/coins/dash.png" width="20" class="coin-icon" alt="coin">
+                    Dash
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="green-text">2.04%</td>
+                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="8cd8aa">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td class="coin-name">
+                    <img src="images/coins/monero.png" width="20" class="coin-icon" alt="coin">
+                    Monero
+                </td>
+                <td>$239048209</td>
+                <td>$4559</td>
+                <td>$2344234</td>
+                <td class="green-text">3.04%</td>
+                <td class="marketcap-canvas" data-charts="[65,81,40,80,56,59,81,55,90]" data-border="8cd8aa">
+                    <canvas></canvas>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
-
 <footer>
 
 </footer>

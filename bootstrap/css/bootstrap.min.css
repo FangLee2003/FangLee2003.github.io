@@ -58,7 +58,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #fff;
     text-align: left;
     background-color: #fff;
 }
@@ -1881,9 +1881,6 @@ pre code {
         margin-left: 91.666667%;
     }
 }
-
-
-
 
 
 .table-sm th,
@@ -6521,6 +6518,10 @@ a.close.disabled {
     content: "";
 }
 
+.carousel-inner h4 {
+    margin-bottom: 2rem;
+}
+
 .carousel-item {
     position: relative;
     display: none;
@@ -8140,9 +8141,12 @@ button.bg-dark:focus {
     }
 }
 
+.float-left {
+    float: left;
+}
 
 .float-right {
-    float: right !important;
+    float: right;
 }
 
 .float-none {
@@ -10557,6 +10561,9 @@ button.bg-dark:focus {
     text-align: right !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
 
 @media (min-width: 576px) {
     .text-sm-left {
@@ -10825,14 +10832,6 @@ a.text-dark:hover, a.text-dark:focus {
         border: 1px solid #000;
     }
 
-    .history-table {
-        border-collapse: collapse !important;
-    }
-
-    .history-table td,
-    .history-table th {
-        background-color: #fff !important;
-    }
 
     .table-bordered th,
     .table-bordered td {
@@ -10847,11 +10846,6 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark td,
     .table-dark thead th,
     .table-dark tbody + tbody {
-        border-color: #dee2e6;
-    }
-
-    .history-table .thead-dark th {
-        color: inherit;
         border-color: #dee2e6;
     }
 }

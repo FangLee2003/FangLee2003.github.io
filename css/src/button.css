@@ -8,7 +8,7 @@
     border: none;
 }
 
-.button-green:hover, button-red:hover, button-white:hover {
+.button-green:hover, .button-red:hover, .button-purple:hover {
     text-decoration: none;
 }
 
