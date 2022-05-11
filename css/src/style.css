@@ -562,37 +562,6 @@ td, th {
 }
 
 
-.tab-content {
-    border: 0.1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 2px;
-}
-
-.tab-content table thead th {
-    background: rgba(31, 38, 56, 0.5);
-    position: sticky;
-    top: 0;
-}
-
-.tab-content table thead tr {
-color: #fff;
-    cursor: none;
-    background: rgba(19, 26, 51, 0.5);
-}
-
-.tab-content table tr:hover {
-    background: rgba(36, 44, 64, 0.2) !important;
-    cursor: pointer;
-}
-
-.tab-content table tr:nth-of-type(odd) {
-    background: rgba(19, 26, 51, 0.5);
-
-}
-
-.tab-content table tr:nth-of-type(even) {
-    background: rgba(17, 21, 43, 0.5);
-
-}
 
 .no-orders {
     background: #131a33;
@@ -937,17 +906,17 @@ color: #fff;
     margin-right: 8px;
 }
 
-.crypt-withdraw-body .tab-content {
+.crypt-withdraw-body .history-table {
     border-left: 1px solid #f1f1f1;
     padding: 30px;
 }
 
-.crypt-withdraw-body .tab-content {
+.crypt-withdraw-body .history-table {
     border-left: 1px solid #2f3a56;
     padding: 30px;
 }
 
-.crypt-withdraw-body .tab-content .tab-pane {
+.crypt-withdraw-body .history-table .tab-pane {
 }
 
 /*---- deposit form ----*/
@@ -1085,10 +1054,7 @@ row.md-gutter [class*='col-'] {
 }
 
 /*----- candlestick chart --------*/
-#crypt-candle-chart {
-    width: 100%;
-    height: 35rem !important;
-}
+
 
 .crypt-star {
     margin-top: -4px;

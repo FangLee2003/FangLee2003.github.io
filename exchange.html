@@ -32,19 +32,19 @@
 
 <div class="flex-container">
     <div class="col-2-3">
-        <div id="crypt-candle-chart"></div>
+        <div id="candle-chart"></div>
     </div>
     <div class="col-1-3">
         <div class="form">
             <table>
                 <tr>
-                    <th colspan="2">
+                    <td colspan="2">
                         <select required>
                             <option value="1">Bitcoin</option>
-                            <option value="2">ETH</option>
+                            <option value="2">Etd</option>
                             <option value="3">Dogecoin</option>
                         </select>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -53,93 +53,91 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="" class="button-green">Buy</a>
+                        <button class="button-green">Buy</button>
                     </td>
                     <td>
-                        <a href="" class="button-red">Sell</a>
+                        <button class="button-red">Sell</button>
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="tab-content scroll-tab">
-            <div role="tabpanel" class="tab-pane active" id="closed-orders">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th scope="col">Time</th>
-                        <th scope="col">Currency</th>
-                        <th scope="col">Buy/sell</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Amount</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Dogecoin</td>
-                        <td class="green-text">Buy</td>
-                        <td class="green-text">0.000056</td>
-                        <td class="green-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Bitcoin</td>
-                        <td class="red-text">Sell</td>
-                        <td class="red-text">0.000056</td>
-                        <td class="red-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Dogecoin</td>
-                        <td class="green-text">Buy</td>
-                        <td class="green-text">0.000056</td>
-                        <td class="green-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Bitcoin</td>
-                        <td class="red-text">Sell</td>
-                        <td class="red-text">0.000056</td>
-                        <td class="red-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Dogecoin</td>
-                        <td class="green-text">Buy</td>
-                        <td class="green-text">0.000056</td>
-                        <td class="green-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Bitcoin</td>
-                        <td class="red-text">Sell</td>
-                        <td class="red-text">0.000056</td>
-                        <td class="red-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Dogecoin</td>
-                        <td class="green-text">Buy</td>
-                        <td class="green-text">0.000056</td>
-                        <td class="green-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Bitcoin</td>
-                        <td class="red-text">Sell</td>
-                        <td class="red-text">0.000056</td>
-                        <td class="red-text">0.000056</td>
-                    </tr>
-                    <tr>
-                        <th>22:35:59</th>
-                        <td>Dogecoin</td>
-                        <td class="green-text">Buy</td>
-                        <td class="green-text">0.000056</td>
-                        <td class="green-text">0.000056</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="scroll-table">
+            <table class="history-table">
+                <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Buy/sell</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Dogecoin</td>
+                    <td class="green-text">Buy</td>
+                    <td class="green-text">0.000056</td>
+                    <td class="green-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Bitcoin</td>
+                    <td class="red-text">Sell</td>
+                    <td class="red-text">0.000056</td>
+                    <td class="red-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Dogecoin</td>
+                    <td class="green-text">Buy</td>
+                    <td class="green-text">0.000056</td>
+                    <td class="green-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Bitcoin</td>
+                    <td class="red-text">Sell</td>
+                    <td class="red-text">0.000056</td>
+                    <td class="red-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Dogecoin</td>
+                    <td class="green-text">Buy</td>
+                    <td class="green-text">0.000056</td>
+                    <td class="green-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Bitcoin</td>
+                    <td class="red-text">Sell</td>
+                    <td class="red-text">0.000056</td>
+                    <td class="red-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Dogecoin</td>
+                    <td class="green-text">Buy</td>
+                    <td class="green-text">0.000056</td>
+                    <td class="green-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Bitcoin</td>
+                    <td class="red-text">Sell</td>
+                    <td class="red-text">0.000056</td>
+                    <td class="red-text">0.000056</td>
+                </tr>
+                <tr>
+                    <td>22:35:59</td>
+                    <td>Dogecoin</td>
+                    <td class="green-text">Buy</td>
+                    <td class="green-text">0.000056</td>
+                    <td class="green-text">0.000056</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

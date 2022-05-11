@@ -1,10 +1,10 @@
-if(document.getElementById('depthchart')){
+if(document.getElementById('depth-chart')){
   am4core.useTheme(am4themes_dark);
   am4core.useTheme(am4themes_animated);
   // Themes end
 
   // Create chart instance
-  var chart = am4core.create("depthchart", am4charts.XYChart);
+  var chart = am4core.create("depth-chart", am4charts.XYChart);
 
   // Add data
   chart.dataSource.url = "https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_ETH&depth=50";

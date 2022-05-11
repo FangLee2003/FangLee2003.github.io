@@ -4,9 +4,16 @@ body {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     font-size: 13px;
-    overflow-x: hidden;
     margin: 5rem 2rem;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
 
 .text-center {
     text-align: center !important;
@@ -15,9 +22,11 @@ body {
 .float-left {
     float: left;
 }
+
 .float-right {
     float: right;
 }
+
 .green-text {
     color: #49c279 !important;
 }

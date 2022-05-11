@@ -1,10 +1,8 @@
-
 @import url(src/style2.css);
-@import url(src/ui.css);
 @import url(src/content.css);
 @import url(src/navbar.css);
 @import url(src/form.css);
-@import url(src/list.css);
+@import url(src/table.css);
 @import url(src/chart.css);
 @import url(src/button.css);
 @import url(src/icons.css);
