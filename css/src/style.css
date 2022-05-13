@@ -38,9 +38,8 @@ body::-webkit-scrollbar {
         margin: 20px 20% 0;
     }
 }
-
 .coin-name {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
 }
 
