@@ -70,7 +70,7 @@
 }
 
 .marketcap-table thead th {
-    padding: 1.5rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .marketcap-table tbody tr td:last-child {

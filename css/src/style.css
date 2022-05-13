@@ -34,8 +34,8 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 1336px) {
     .col-1-3, .col-2-3 {
-        width: 60%;
-        margin: 20px 20%;
+        width: 70%;
+        margin: 20px 20% 0;
     }
 }
 
