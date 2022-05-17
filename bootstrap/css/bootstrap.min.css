@@ -6561,7 +6561,9 @@ a.close.disabled {
 
 .carousel-fade .carousel-item {
     opacity: 0;
-    transition-property: opacity, 0.6s ease-in-out;
+    transition-property: opacity;
+    -webkit-transform: none;
+    transform: none;
 }
 
 .carousel-fade .carousel-item.active,
