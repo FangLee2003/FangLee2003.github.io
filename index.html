@@ -11,7 +11,14 @@
     h1 {
         margin: 3rem 0 2rem;
     }
-
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
     @media screen and (min-width: 1336px) {
         .col-2-3 {
             margin: 0 20%;
@@ -279,7 +286,6 @@
 </footer>
 <script src="js/jquery.js"></script>
 <script src="amc/core.js"></script>
-<script src="js/3DCarousel.js"></script>
 <script src="amc/charts.js"></script>
 <script src="amc/animated.js"></script>
 <script src="js/Chart.min.js"></script>
