@@ -2,4 +2,4 @@
 #### Link website: http://fanglee2003.github.io./
 
 ### Preview
-![Preview](https://user-images.githubusercontent.com/75077747/167825199-7504910e-41ec-4403-87f4-5d4664336205.png)
+![preview-register](https://user-images.githubusercontent.com/75077747/169092886-24123d8b-7908-4cfe-9248-2b995d4a6ab1.png)
