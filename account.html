@@ -41,61 +41,11 @@
 
 <div class="flex-container">
     <div class="col-1-3 fadeInUp">
-        <div class="form" style="padding: 5px;">
-            <div class="text-center"><img src="images/wallet.png" class="wallet-icon" alt="wallet"></div>
-            <!-- <form class="crypt-dash-search">
-                <input type="search" placeholder="Search..." name="s" class="crypt-big-search">
-                <button type="submit">
-                    <i class="pe-7s-search"></i>
-                </button>
-            </form>
-            -->
-            <ul class="wallet-table scroll-table" style="border: none;">
-                <li>
-                    <a href="#bitcoin">
-                        <img src="images/coins/btc.png" width="25" class="coin-icon"
-                             alt="coin">55 Bitcoin <p class="float-right">$456568</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#ethrium">
-                        <img src="images/coins/eth.png" width="25" class="coin-icon"
-                             alt="coin">40 Ethrium <p class="float-right">$456568</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#litecoin">
-                        <img src="images/coins/ltc.png" width="25" class="coin-icon"
-                             alt="coin">41 Litecoin <p class="float-right">$456568</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#xrp">
-                        <img src="images/coins/xrp.png" width="25" class="coin-icon"
-                             alt="coin">12 XRP <p class="float-right">$456568</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#monero">
-                        <img src="images/coins/monero.png" width="25" class="coin-icon"
-                             alt="coin">19 Monero <p class="float-right">$456568</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#zilliqua">
-                        <img src="images/coins/zil.png" width="25" class="coin-icon"
-                             alt="coin">24 Zilliqua <p class="float-right">$456568</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#dash">
-                        <img src="images/coins/dash.png" width="25" class="coin-icon"
-                             alt="coin">33 Dash <p class="float-right">$456568</p>
-                    </a>
-                </li>
-            </ul>
+        <div class="doughnut-chart">
+            <canvas id="doughnut-canvas"></canvas>
         </div>
     </div>
+
     <div class="col-1-3 text-center fadeInUp">
         <div class="form">
             <table>
@@ -243,13 +193,11 @@
     </div>
 </div>
 
-<script src="bootstrap/js/bootstrap.bundle.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/chart.min.js"></script>
 <script src="js/line-chart.js"></script>
+<script src="js/doughnut-chart.js"></script>
 <script src="js/loading.js"></script>
 
 </body>
-
 </html>
