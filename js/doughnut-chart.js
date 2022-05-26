@@ -16,7 +16,8 @@ var option = {
         arc: {
             borderWidth: 0
         }
-    }
+    },
+    cutoutPercentage: 70
 }
 new Chart("doughnut-canvas", {
     type: "doughnut",

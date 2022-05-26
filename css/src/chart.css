@@ -13,18 +13,17 @@
     text-align: center;
 }
 
-
 .doughnut-chart {
     position: relative;
-    width: 80vw;
+    width: 26.2rem;
     background-color: rgba(14, 22, 45, 0.2);
     background-clip: padding-box;
     border: thin solid rgba(255, 255, 255, 0.2);
     border-radius: 0.25rem;
 }
 
-@media screen and (min-width: 1336px) {
+@media screen and (max-width: 1280px) {
     .doughnut-chart {
-        width: 26.2rem;
+        width: 80vw;
     }
 }
