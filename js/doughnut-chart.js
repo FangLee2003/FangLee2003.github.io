@@ -22,9 +22,9 @@ var option = {
 new Chart("doughnut-canvas", {
     type: "doughnut",
     data: {
-        labels: ['Bitcoin', 'ETH', 'Dogecoin'],
+        labels: ['Bitcoin', 'ETH', 'USD'],
         datasets: [{
-            data: [25, 15, 60],
+            data: [250, 150, 600],
             backgroundColor: ['#838BED', '#3B3DA1', '#1A1A74'],
             hoverBackgroundColor: ["#838BED", "#3B3DA1", "#1A1A74"]
         }]
