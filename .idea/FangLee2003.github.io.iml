@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="tv" level="application" />
+    <orderEntry type="library" name="embed-widget-screener" level="application" />
   </component>
 </module>

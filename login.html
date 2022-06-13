@@ -35,6 +35,8 @@
 </style>
 
 <body>
+<div id="fb-root"></div>
+
 <div id="loading">
     <img id="loading-image" src="images/loading.gif" alt="Loading..."/>
 </div>
@@ -86,6 +88,12 @@
         </tr>
         <tr>
             <td>
+                <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with"
+                     data-layout="default" data-auto-logout-link="true" data-use-continue-as="true"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <p class="float-left"><a href="register.html">Register</a></p>
                 <p class="float-right"><a href="recover-password.html">Recover Password</a></p>
             </td>
@@ -96,6 +104,12 @@
 <script src="bootstrap/js/bootstrap.bundle.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery.js"></script>
+
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=966413697364774&autoLogAppEvents=1"
+        nonce="e3FHeFDB">
+</script>
+
 <script src="js/loading.js"></script>
 
 </body>
