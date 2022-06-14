@@ -63,8 +63,8 @@ body::-webkit-scrollbar {
 }
 
 .col-2-3 {
-    width: 60%;
-    margin: 0 1.5%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 .col-3-3 {
@@ -105,5 +105,21 @@ body::-webkit-scrollbar {
 
 .fadeInUp {
     animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
     animation-duration: 1s;
 }

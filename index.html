@@ -16,12 +16,6 @@
     h1 {
         margin: 3rem 0 2rem;
     }
-
-    @media screen and (min-width: 1281px) {
-        .col-2-3 {
-            margin: 0 20%;
-        }
-    }
 </style>
 <body>
 <div id="loading">
@@ -48,8 +42,8 @@
 </nav>
 
 <!-- Main Content -->
-<div class="flex-container">
-    <div class="col-2-3 text-center fadeInUp">
+<div class="flex-container" style="margin-top: 2rem">
+    <div class="col-2-3 text-center fadeInDown">
         <h1><b>Total Market Cap: <span class="green-text">$1001,056,234,480</span></b></h1>
         <div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -129,153 +123,158 @@
             </a>
         </div>
 
-        <h1 class="green-text"><b>Top 10 Cryptocurrencies</b></h1>
+        <h1><b><span class="green-text">Top 100</span> Cryptocurrencies</b></h1>
 
-        <table class="history-table marketcap-table">
-            <thead>
-            <tr>
-                <th scope="col">Rank</th>
-                <th scope="col">Name</th>
-                <th scope="col">Market Cap</th>
-                <th scope="col">Price</th>
-                <th scope="col">24 Hour Volume</th>
-                <th scope="col">Change</th>
-                <th scope="col">7 days</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th>1</th>
-                <td class="coin-name">
-                    <img src="images/coins/btc.png" width="15" class="coin-icon" alt="coin">BTC
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="red-text">-0.04%</td>
-                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="dc3545">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>2</th>
-                <td class="coin-name">
-                    <img src="images/coins/eth.png" width="15" class="coin-icon" alt="coin">ETH
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="red-text">-4.04%</td>
-                <td class="marketcap-canvas" data-charts="[34,54,23,56,76,78,34,56,45]" data-border="dc3545">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>3</th>
-                <td class="coin-name">
-                    <img src="images/coins/ltc.png" width="15" class="coin-icon" alt="coin">LTC
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="green-text">3.04%</td>
-                <td class="marketcap-canvas" data-charts="[55,40,80,90,65,59,81,81,56]" data-border="8cd8aa">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>4</th>
-                <td class="coin-name">
-                    <img src="images/coins/btcc.png" width="15" class="coin-icon" alt="coin">BTCC
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="red-text">-0.45%</td>
-                <td class="marketcap-canvas" data-charts="[89,23,67,45,23,45,78,34,56,67]" data-border="dc3545">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>5</th>
-                <td class="coin-name">
-                    <img src="images/coins/xrp.png" width="15" class="coin-icon" alt="coin">XRP
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="green-text">6.04%</td>
-                <td class="marketcap-canvas" data-charts="[34,45,56,67,65,45,34,23,45,56]" data-border="8cd8aa">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>6</th>
-                <td class="coin-name">
-                    <img src="images/coins/tron.png" width="15" class="coin-icon" alt="coin">TRX
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="red-text">-6.7%</td>
-                <td class="marketcap-canvas" data-charts="[45,34,45,56,67,45,56,67,78,67]" data-border="dc3545">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>7</th>
-                <td class="coin-name">
-                    <img src="images/coins/stlr.png" width="15" class="coin-icon" alt="coin">XLM
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="green-text">2.04%</td>
-                <td class="marketcap-canvas" data-charts="[56,45,67,45,34,45,56,67,56,45]" data-border="8cd8aa">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>8</th>
-                <td class="coin-name">
-                    <img src="images/coins/tether.png" width="15" class="coin-icon" alt="coin">USDT
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="green-text">5.04%</td>
-                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="8cd8aa">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>9</th>
-                <td class="coin-name">
-                    <img src="images/coins/dash.png" width="15" class="coin-icon" alt="coin">DSH
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="green-text">2.04%</td>
-                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="8cd8aa">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            <tr>
-                <th>10</th>
-                <td class="coin-name">
-                    <img src="images/coins/monero.png" width="15" class="coin-icon" alt="coin">XMR
-                </td>
-                <td>$239048209</td>
-                <td>$4559</td>
-                <td>$2344234</td>
-                <td class="green-text">3.04%</td>
-                <td class="marketcap-canvas" data-charts="[65,81,40,80,56,59,81,55,90]" data-border="8cd8aa">
-                    <canvas></canvas>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="form" style="border: none; margin-top: 2rem; overflow: hidden;">
+            <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=100&pref_coin_id=1505&graph=yes"
+                    width="103%" height="1000px" marginwidth="0" marginheight="0" frameborder="0" border="0">
+            </iframe>
+        </div>
+        <!--        <table class="history-table marketcap-table">-->
+        <!--            <thead>-->
+        <!--            <tr>-->
+        <!--                <th scope="col">Rank</th>-->
+        <!--                <th scope="col">Name</th>-->
+        <!--                <th scope="col">Market Cap</th>-->
+        <!--                <th scope="col">Price</th>-->
+        <!--                <th scope="col">24 Hour Volume</th>-->
+        <!--                <th scope="col">Change</th>-->
+        <!--                <th scope="col">7 days</th>-->
+        <!--            </tr>-->
+        <!--            </thead>-->
+        <!--            <tbody>-->
+        <!--            <tr>-->
+        <!--                <th>1</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/btc.png" width="15" class="coin-icon" alt="coin">BTC-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="red-text">-0.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="dc3545">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>2</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/eth.png" width="15" class="coin-icon" alt="coin">ETH-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="red-text">-4.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[34,54,23,56,76,78,34,56,45]" data-border="dc3545">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>3</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/ltc.png" width="15" class="coin-icon" alt="coin">LTC-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="green-text">3.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[55,40,80,90,65,59,81,81,56]" data-border="8cd8aa">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>4</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/btcc.png" width="15" class="coin-icon" alt="coin">BTCC-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="red-text">-0.45%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[89,23,67,45,23,45,78,34,56,67]" data-border="dc3545">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>5</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/xrp.png" width="15" class="coin-icon" alt="coin">XRP-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="green-text">6.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[34,45,56,67,65,45,34,23,45,56]" data-border="8cd8aa">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>6</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/tron.png" width="15" class="coin-icon" alt="coin">TRX-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="red-text">-6.7%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[45,34,45,56,67,45,56,67,78,67]" data-border="dc3545">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>7</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/stlr.png" width="15" class="coin-icon" alt="coin">XLM-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="green-text">2.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[56,45,67,45,34,45,56,67,56,45]" data-border="8cd8aa">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>8</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/tether.png" width="15" class="coin-icon" alt="coin">USDT-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="green-text">5.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="8cd8aa">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>9</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/dash.png" width="15" class="coin-icon" alt="coin">DSH-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="green-text">2.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[65,59,81,81,56,55,40,80,90]" data-border="8cd8aa">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <th>10</th>-->
+        <!--                <td class="coin-name">-->
+        <!--                    <img src="images/coins/monero.png" width="15" class="coin-icon" alt="coin">XMR-->
+        <!--                </td>-->
+        <!--                <td>$239048209</td>-->
+        <!--                <td>$4559</td>-->
+        <!--                <td>$2344234</td>-->
+        <!--                <td class="green-text">3.04%</td>-->
+        <!--                <td class="marketcap-canvas" data-charts="[65,81,40,80,56,59,81,55,90]" data-border="8cd8aa">-->
+        <!--                    <canvas></canvas>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        <!--            </tbody>-->
+        <!--        </table>-->
     </div>
 </div>
 
