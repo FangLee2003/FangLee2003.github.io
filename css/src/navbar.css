@@ -6,18 +6,26 @@
     top: 0;
     left: 0;
     width: 100%;
+    margin: 16px 0;
 }
 
 .nav-bar-left {
-    width: 30%;
-    margin: 0 1%;
+    width: 40%;
+    margin: 0px 1%;
+}
+
+.nav-bar-left input {
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    height: 36px;
+    border: thin solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
 }
 
 .nav-bar-right {
     width: 66%;
     display: block;
     list-style: none;
-    margin: 16px 0;
 }
 
 .nav-bar-right ul {
