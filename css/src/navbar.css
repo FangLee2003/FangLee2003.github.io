@@ -20,6 +20,7 @@
     height: 36px;
     border: thin solid rgba(255, 255, 255, 0.2);
     border-radius: 0.25rem;
+    padding-left: 1rem;
 }
 
 .nav-bar-right {
