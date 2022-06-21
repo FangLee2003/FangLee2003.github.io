@@ -7,6 +7,8 @@
     <link rel="icon" href="images/logo-color.png">
     <link rel='stylesheet' href="css/main.css" type="text/css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:image" content="images/preview-register.png"/>
     <meta property="og:title" content="Kripto Register"/>
     <meta property="og:description" content="Trading Future"/>
@@ -19,18 +21,13 @@
         background-size: cover;
     }
 
-    .sign-in {
-        margin-top: 5rem;
+    .col-1-3 {
+        margin: 5rem auto;
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 80em) {
         body {
             background-image: url('./images/background2.jpg');
-        }
-
-        .sign-in {
-            width: 40%;
-            margin: 50% auto;
         }
     }
 </style>
@@ -58,55 +55,82 @@
             <li class="nav-bar-green"><a href="login.html">login</a></li>
         </ul>
     </div>
+    <label for="nav_mobile_input" class="nav_bar_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+                  style="fill: #fff"/>
+        </svg>
+    </label>
+
+    <input type="checkbox" hidden name="" class="nav_input" id="nav_mobile_input">
+
+    <label for="nav_mobile_input" class="nav_overlay"></label>
+
+    <div class="nav-bar-right-mobile">
+        <label for="nav_mobile_input" class="nav_mobile_close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/>
+            </svg>
+        </label>
+        <ul class="nav_mobile_list">
+            <li><a href="index.html" class="nav_mobile_link">Market cap</a></li>
+            <!--            <li><a href="news.html" class="nav_mobile_link">News</a></li>-->
+
+            <li><a href="exchange.html" class="nav_mobile_link">Exchange</a></li>
+            <li><a href="account.html" class="nav_mobile_link">Account</a></li>
+            <li><a href="register.html" class="nav_mobile_link">Register</a></li>
+            <li><a href="login.html" class="nav_mobile_link">Login</a></li>
+        </ul>
+    </div>
 </nav>
 
 <!-- Main Content -->
-<div class="form sign-in fadeInUp">
-
-    <table>
-        <tr>
-            <th>
-                <div class="logo">
-                    <img src="images/logo-color.png" alt="logo-image">
-                    <h1>Register</h1>
-                </div>
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <input type="text" placeholder="Email / phone" name="bank-account">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="password" placeholder="Password" name="amount">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="password" placeholder="Confirm Password" name="swift">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button class="button-purple">Sign up</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with"
-                     data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p class="float-left"><a href="login.html">Login</a></p>
-                <p class="float-right"><a href="recover-password.html">Recover Password</a></p>
-            </td>
-        </tr>
-    </table>
+<div class="col-1-3">
+    <div class="frame form fadeInUp" style="padding: 1rem 3rem;">
+        <table>
+            <tr>
+                <th>
+                    <div class="logo">
+                        <img src="images/logo-color.png" alt="logo-image">
+                        <h1>Register</h1>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Email / phone" name="bank-account">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="Password" name="amount">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" placeholder="Confirm Password" name="swift">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="button-purple">Sign up</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with"
+                         data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="float-left"><a href="login.html">Login</a></p>
+                    <p class="float-right"><a href="recover-password.html">Recover Password</a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
-
 <script src="bootstrap/js/bootstrap.bundle.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery.js"></script>

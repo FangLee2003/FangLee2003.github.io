@@ -506,7 +506,7 @@ pre code {
     overflow-y: scroll
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.frame, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -515,25 +515,25 @@ pre code {
 }
 
 @media (min-width: 576px) {
-    .container, .container-sm {
+    .frame, .container-sm {
         max-width: 540px
     }
 }
 
 @media (min-width: 768px) {
-    .container, .container-md, .container-sm {
+    .frame, .container-md, .container-sm {
         max-width: 720px
     }
 }
 
 @media (min-width: 992px) {
-    .container, .container-lg, .container-md, .container-sm {
+    .frame, .container-lg, .container-md, .container-sm {
         max-width: 960px
     }
 }
 
 @media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
+    .frame, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1140px
     }
 }
@@ -4304,7 +4304,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     padding: .5rem 1rem
 }
 
-.navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
+.navbar .frame, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -4392,7 +4392,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 @media (max-width: 575.98px) {
-    .navbar-expand-sm > .container, .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-xl {
+    .navbar-expand-sm > .frame, .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-xl {
         padding-right: 0;
         padding-left: 0
     }
@@ -4420,7 +4420,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
         padding-left: .5rem
     }
 
-    .navbar-expand-sm > .container, .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-xl {
+    .navbar-expand-sm > .frame, .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-xl {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap
     }
@@ -4442,7 +4442,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 @media (max-width: 767.98px) {
-    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-md, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-xl {
+    .navbar-expand-md > .frame, .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-md, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-xl {
         padding-right: 0;
         padding-left: 0
     }
@@ -4470,7 +4470,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
         padding-left: .5rem
     }
 
-    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-md, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-xl {
+    .navbar-expand-md > .frame, .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-md, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-xl {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap
     }
@@ -4492,7 +4492,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 @media (max-width: 991.98px) {
-    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-xl {
+    .navbar-expand-lg > .frame, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-xl {
         padding-right: 0;
         padding-left: 0
     }
@@ -4520,7 +4520,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
         padding-left: .5rem
     }
 
-    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-xl {
+    .navbar-expand-lg > .frame, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-xl {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap
     }
@@ -4542,7 +4542,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 @media (max-width: 1199.98px) {
-    .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-xl {
+    .navbar-expand-xl > .frame, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-xl {
         padding-right: 0;
         padding-left: 0
     }
@@ -4570,7 +4570,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
         padding-left: .5rem
     }
 
-    .navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-xl {
+    .navbar-expand-xl > .frame, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-xl {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap
     }
@@ -4598,7 +4598,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     justify-content: flex-start
 }
 
-.navbar-expand > .container, .navbar-expand > .container-fluid, .navbar-expand > .container-lg, .navbar-expand > .container-md, .navbar-expand > .container-sm, .navbar-expand > .container-xl {
+.navbar-expand > .frame, .navbar-expand > .container-fluid, .navbar-expand > .container-lg, .navbar-expand > .container-md, .navbar-expand > .container-sm, .navbar-expand > .container-xl {
     padding-right: 0;
     padding-left: 0
 }
@@ -4617,7 +4617,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     padding-left: .5rem
 }
 
-.navbar-expand > .container, .navbar-expand > .container-fluid, .navbar-expand > .container-lg, .navbar-expand > .container-md, .navbar-expand > .container-sm, .navbar-expand > .container-xl {
+.navbar-expand > .frame, .navbar-expand > .container-fluid, .navbar-expand > .container-lg, .navbar-expand > .container-md, .navbar-expand > .container-sm, .navbar-expand > .container-xl {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap
 }
@@ -10415,7 +10415,7 @@ a.text-dark:focus, a.text-dark:hover {
         min-width: 992px !important
     }
 
-    .container {
+    .frame {
         min-width: 992px !important
     }
 
